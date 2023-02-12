@@ -14,6 +14,7 @@ import * as d3 from "d3";
 import vaxModels from "../data/vaxModels.json";
 import primary from "../data/primary.json";
 import Navbar from "../components/Navbar";
+import { NextSeo } from "next-seo";
 
 const chartPadding = {
     top: 8,
@@ -232,6 +233,7 @@ export default function Index({ thisUser, initVaxEvents }: {
     return (
         <>
             <Navbar thisUser={thisUser}/>
+            <NextSeo title="BoostOnTime: Vaccine Effectiveness Tool"/>
             <div className="w-full mx-auto px-4 py-8">
                 <H2 className="text-center text-2xl my-6">Your current<br/>vaccine effectiveness</H2>
                 <p className="text-center text-9xl font-garamond font-extrabold"><span className="bg-infection leading-none inline-block px-4">{getCurrentStat(vaxEvents, "infection")}%</span></p>

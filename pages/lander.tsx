@@ -1,12 +1,14 @@
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 import H1 from "../components/H1";
+import {NextSeo} from "next-seo";
 
 export default function Lander() {
     const router = useRouter();
 
     return (
         <div className="w-full bg-gray-100 min-h-screen">
+            <NextSeo title="BoostOnTime: Vaccine Effectiveness Tool"/>
             <div className="flex items-center justify-center pt-8">
                 <img src="/logo.png" className="w-24" alt="BoostOnTime logo" />
                 <div className="ml-4">
