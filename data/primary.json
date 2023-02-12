@@ -10,7 +10,7 @@
   {
     "days": 420,
     "VE": 0.8,
-    "LCL": -1.5,
+    "LCL": 0,
     "UCL": 3,
     "vaccine": "Pfizer 1st and 2nd doses",
     "outcome_category": "infection"
@@ -482,7 +482,7 @@
   {
     "days": 90,
     "VE": 17.3,
-    "LCL": -45.3,
+    "LCL": 0,
     "UCL": 62.6,
     "vaccine": "Second booster",
     "outcome_category": "infection"
