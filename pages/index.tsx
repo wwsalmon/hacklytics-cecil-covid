@@ -36,7 +36,7 @@ export default function Index({ thisUser }: {
         const svgHeight = 400;
         const chartWidth = svgWidth - chartPadding.left - chartPadding.right;
         const chartHeight = svgHeight - chartPadding.top - chartPadding.bottom;
-        const xScale = d3.scaleTime().domain([0, Date.now() + 24 * 60 * 60 * 1000 * 100]).range([0, chartWidth]);
+        const xScale = d3.scaleTime().domain([new Date("2020-01-01"), new Date()]).range([0, chartWidth]);
         const xAxis = d3.axisBottom(xScale);
         const yScale = d3.scaleLinear().domain([0, 100]).range([chartHeight, 0]);
         const yAxis = d3.axisLeft(yScale);
@@ -48,7 +48,7 @@ export default function Index({ thisUser }: {
         svg.select("g.yAxis").node() && svg.select("g.yAxis").remove();
         svg.append("g").attr("class", "yAxis").attr("transform", `translate(${chartPadding.left}, ${chartPadding.top})`).call(yAxis);
 
-        svg.selectAll("line.vax").data(vaxEvents).join("line").attr("class", "vax").attr("x1", d => xScale(new Date(d.date))).attr("x2", d => xScale(new Date(d.date))).attr("y1", chartPadding.top).attr("y2", chartPadding.top + chartHeight).attr("stroke", "red").attr("strokeWidth", 4);
+        svg.selectAll("line.vax").data(vaxEvents).join("line").attr("class", "vax").attr("x1", d => xScale(new Date(d.date)) + chartPadding.left).attr("x2", d => xScale(new Date(d.date)) + chartPadding.left).attr("y1", chartPadding.top).attr("y2", chartPadding.top + chartHeight).attr("stroke", "red").attr("strokeWidth", 4);
 
     }, [vaxEvents]);
 
