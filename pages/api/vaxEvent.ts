@@ -1,17 +1,11 @@
 import { NextApiHandler } from "next";
 import nextApiEndpoint from "../../utils/nextApiEndpoint";
 import { VaxEventModel } from "../../models/models";
-import {res200, res400, res404, res403} from "next-response-helpers";
-import mongoose from "mongoose";
-import getLookup from "../../utils/getLookup";
+import { res200, res400, res403, res404 } from "next-response-helpers";
 
 const handler: NextApiHandler = nextApiEndpoint({
     getFunction: async (req, res, session, thisUser) => {
-        const vaxEvents = await VaxEventModel.aggregate([
-            {$match: {userId: thisUser._id}},
-            getLookup("vaxmodels", "_id", "vaxId", "vax"),
-            {$unwind: "$vax"},
-        ]);
+        const vaxEvents = await VaxEventModel.find({userId: thisUser._id});
 
         return res200(res, {vaxEvents});
     },

@@ -1,0 +1,434 @@
+[
+  {
+    "days": 329,
+    "VE": 37.5,
+    "LCL": 36,
+    "UCL": 39,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 420,
+    "VE": 0.8,
+    "LCL": -1.5,
+    "UCL": 3,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 329,
+    "VE": 58.8,
+    "LCL": 49.3,
+    "UCL": 66.5,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 420,
+    "VE": 29.4,
+    "LCL": 50.4,
+    "UCL": 76.9,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 329,
+    "VE": 75.2,
+    "LCL": 67.7,
+    "UCL": 81,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 420,
+    "VE": 59.1,
+    "LCL": 27.2,
+    "UCL": 77,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 322,
+    "VE": 47.2,
+    "LCL": 45.8,
+    "UCL": 48.5,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 413,
+    "VE": 30.3,
+    "LCL": 28.9,
+    "UCL": 32.9,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 322,
+    "VE": 64.7,
+    "LCL": 57.2,
+    "UCL": 70.9,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 413,
+    "VE": 61.5,
+    "LCL": 49.6,
+    "UCL": 70.6,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 322,
+    "VE": 69.6,
+    "LCL": 62.3,
+    "UCL": 75.5,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 413,
+    "VE": 48.3,
+    "LCL": 22.6,
+    "UCL": 65.4,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 287,
+    "VE": 48.8,
+    "LCL": 47.2,
+    "UCL": 50.4,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 378,
+    "VE": 49,
+    "LCL": 46.4,
+    "UCL": 51.4,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 287,
+    "VE": 65.3,
+    "LCL": 58.3,
+    "UCL": 71.1,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 378,
+    "VE": 53.3,
+    "LCL": 26.7,
+    "UCL": 70.2,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 287,
+    "VE": 76.1,
+    "LCL": 69.2,
+    "UCL": 81.4,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "death"
+  },
+  {
+    "days": 378,
+    "VE": 77.5,
+    "LCL": 19.6,
+    "UCL": 93.7,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "death"
+  },
+  {
+    "days": 175,
+    "VE": 54.3,
+    "LCL": 53.6,
+    "UCL": 55,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 266,
+    "VE": 47.4,
+    "LCL": 46.6,
+    "UCL": 48.2,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 175,
+    "VE": 85.8,
+    "LCL": 83.4,
+    "UCL": 87.8,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 266,
+    "VE": 70.9,
+    "LCL": 65.3,
+    "UCL": 75.6,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 175,
+    "VE": 89.6,
+    "LCL": 87,
+    "UCL": 91.6,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 266,
+    "VE": 77.4,
+    "LCL": 70.6,
+    "UCL": 82.6,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 168,
+    "VE": 69.2,
+    "LCL": 68.5,
+    "UCL": 69.9,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 259,
+    "VE": 48.4,
+    "LCL": 47.5,
+    "UCL": 49.3,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 168,
+    "VE": 89.8,
+    "LCL": 88.1,
+    "UCL": 91.3,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 259,
+    "VE": 72.7,
+    "LCL": 67.8,
+    "UCL": 77,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 168,
+    "VE": 93,
+    "LCL": 91.1,
+    "UCL": 94.5,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 259,
+    "VE": 85.1,
+    "LCL": 80.1,
+    "UCL": 88.8,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 140,
+    "VE": 59.2,
+    "LCL": 57.7,
+    "UCL": 60.7,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 231,
+    "VE": 60.5,
+    "LCL": 58.9,
+    "UCL": 62.1,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 140,
+    "VE": 77.9,
+    "LCL": 72.2,
+    "UCL": 82.4,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 231,
+    "VE": 70,
+    "LCL": 64.8,
+    "UCL": 74.5,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 140,
+    "VE": 83.8,
+    "LCL": 76.1,
+    "UCL": 89,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "death"
+  },
+  {
+    "days": 231,
+    "VE": 79.2,
+    "LCL": 73.1,
+    "UCL": 84,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "death"
+  },
+  {
+    "days": 21,
+    "VE": 67.6,
+    "LCL": 66.9,
+    "UCL": 68.3,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 147,
+    "VE": 58.6,
+    "LCL": 58,
+    "UCL": 59.2,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 21,
+    "VE": 94.1,
+    "LCL": 92.2,
+    "UCL": 95.5,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 147,
+    "VE": 87.1,
+    "LCL": 85,
+    "UCL": 88.9,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 21,
+    "VE": 97.1,
+    "LCL": 94.7,
+    "UCL": 98.4,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 147,
+    "VE": 91.9,
+    "LCL": 89.4,
+    "UCL": 93.8,
+    "vaccine": "Pfizer 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 14,
+    "VE": 90.1,
+    "LCL": 89.6,
+    "UCL": 90.7,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 140,
+    "VE": 71.9,
+    "LCL": 71.3,
+    "UCL": 72.6,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 14,
+    "VE": 96.5,
+    "LCL": 95.1,
+    "UCL": 97.6,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 140,
+    "VE": 90.4,
+    "LCL": 88.6,
+    "UCL": 91.9,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 14,
+    "VE": 97.2,
+    "LCL": 95.1,
+    "UCL": 98.4,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 140,
+    "VE": 92.8,
+    "LCL": 90.3,
+    "UCL": 94.6,
+    "vaccine": "Moderna 1st and 2nd doses",
+    "outcome_category": "death"
+  },
+  {
+    "days": 14,
+    "VE": 70.6,
+    "LCL": 68.8,
+    "UCL": 72.3,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 70,
+    "VE": 63,
+    "LCL": 60.8,
+    "UCL": 65,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 14,
+    "VE": 67.9,
+    "LCL": 56.5,
+    "UCL": 76.3,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 70,
+    "VE": 79.3,
+    "LCL": 71.7,
+    "UCL": 84.8,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 14,
+    "VE": 85.7,
+    "LCL": 74.6,
+    "UCL": 91.9,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "death"
+  },
+  {
+    "days": 70,
+    "VE": 80.5,
+    "LCL": 75.7,
+    "UCL": 84.4,
+    "vaccine": "J&J 1st dose",
+    "outcome_category": "death"
+  }
+]
