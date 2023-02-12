@@ -38,7 +38,7 @@ export default function Onboarding({thisUser}: {thisUser: HydratedDocument<IUser
         setIsLoading(true);
 
         axios.post("/api/vaxEvent", {
-            vaxId: (stage === 1 ? brand + " " + brand === "J&J" ? "1st dose" : "1st and 2nd doses" : stage === 2 ? "First booster" : "Second booster"),
+            vaxId: (stage === 1 ? (brand + " " + (brand === "J&J" ? "1st dose" : "1st and 2nd doses")) : stage === 2 ? "First booster" : "Second booster"),
             date: date,
         }).then(res => {
             setStage(prev => prev + 1);

@@ -1,5 +1,5 @@
 import { GetServerSidePropsContext } from "next";
-import { getSession, signOut } from "next-auth/react";
+import { getSession } from "next-auth/react";
 import mongoose, { HydratedDocument } from "mongoose";
 import { IUser, IVaxEvent, UserModel } from "../models/models";
 import { createAccount } from "../utils/createAccount";
@@ -11,8 +11,6 @@ import H1 from "../components/H1";
 import { addDays, differenceInDays, format } from "date-fns";
 import { dateOnly } from "../utils/dateOnly";
 import * as d3 from "d3";
-import temp from "../data/temp.json";
-import temp2 from "../data/temp2.json";
 import vaxModels from "../data/vaxModels.json";
 import primary from "../data/primary.json";
 import Navbar from "../components/Navbar";
@@ -25,14 +23,19 @@ const chartPadding = {
 };
 
 function getSeriesData(vaxEvents: HydratedDocument<IVaxEvent>[], type: "infection" | "death" | "severe") {
+    if (!vaxEvents.length) return [];
+
     return vaxEvents.sort((a, b) => +new Date(a.date) - +new Date(b.date)).map((d, i, a) => {
         const endDate = a[i + 1] ? dateOnly(a[i+1].date) : addDays(new Date(), 365);
         const numDays = differenceInDays(endDate, dateOnly(d.date));
-        const thisSeriesData = primary.filter(x => x.vaccine === d.vaxId && x.outcome_category === type);
+        const thisSeriesData = primary.filter(x => x.vaccine === d.vaxId && x.outcome_category === type).sort((a, b) => a.days - b.days);
         let thisData = thisSeriesData.filter(x => x.days < numDays).map(x => ({
             ...x,
             date: addDays(dateOnly(d.date), x.days),
         }));
+
+        if (!thisData.length) return [];
+
         if (thisData.length < thisSeriesData.length) {
             const lastPoint = thisData[thisData.length - 1];
             const nextPoint = thisSeriesData[thisData.length];
@@ -79,7 +82,7 @@ function getCurrentStat(vaxEvents: HydratedDocument<IVaxEvent>[], type: "infecti
     return (prevStat.VE + rate * daysToPresent).toPrecision(3);
 }
 
-function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, undefined>, vaxEvents: HydratedDocument<IVaxEvent>[], data: {VE: number, days: number}[], xScale: d3.ScaleTime<number, number>, yScale: d3.ScaleLinear<number, number>, type: "infection" | "death" | "severe") {
+function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, undefined>, vaxEvents: HydratedDocument<IVaxEvent>[], xScale: d3.ScaleTime<number, number>, yScale: d3.ScaleLinear<number, number>, type: "infection" | "death" | "severe") {
     const color = {
         infection: "#FED752",
         severe: "#FC3142",
@@ -154,10 +157,12 @@ export default function Index({ thisUser }: {
         const yScale = d3.scaleLinear().domain([0, 100]).range([chartHeight, 0]);
         const yAxis = d3.axisLeft(yScale);
 
-        const firstDay = vaxEvents.sort((a, b) => +new Date(a.date) - +new Date(b.date))[0];
-        const firstX = xScale(new Date(firstDay.date));
+        if (vaxEvents.length) {
+            const firstDay = vaxEvents.sort((a, b) => +new Date(a.date) - +new Date(b.date))[0];
+            const firstX = xScale(new Date(firstDay.date));
 
-        divRef.current.scrollLeft = firstX - 32;
+            divRef.current.scrollLeft = firstX - 32;
+        }
 
         svg.selectAll(".xAxis").remove();
         svg.append("g").attr("class", "xAxis").attr("transform", `translate(${chartPadding.left}, ${chartPadding.top + chartHeight})`).call(xAxis);
@@ -187,9 +192,9 @@ export default function Index({ thisUser }: {
         svg.selectAll("text.present").data([0]).join("text").attr("class", "present").attr("x", xScale(new Date()) + chartPadding.left + 12).attr("y", chartPadding.top + 12).text("today").attr("font-size", 12).style("text-transform", "uppercase").style("font-weight", 700);
 
         // add vaxEvent immunity
-        addImmunity(svg, vaxEvents, temp, xScale, yScale, "infection");
-        addImmunity(svg, vaxEvents, temp, xScale, yScale, "death");
-        addImmunity(svg, vaxEvents, temp, xScale, yScale, "severe");
+        addImmunity(svg, vaxEvents, xScale, yScale, "infection");
+        addImmunity(svg, vaxEvents, xScale, yScale, "death");
+        addImmunity(svg, vaxEvents, xScale, yScale, "severe");
 
         svg.selectAll("path.vaxCurve").data(vaxEvents)
     }, [vaxEvents]);
