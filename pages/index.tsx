@@ -15,6 +15,7 @@ import temp from "../data/temp.json";
 import temp2 from "../data/temp2.json";
 import vaxModels from "../data/vaxModels.json";
 import primary from "../data/primary.json";
+import Navbar from "../components/Navbar";
 
 const chartPadding = {
     top: 8,
@@ -165,41 +166,37 @@ export default function Index({ thisUser }: {
     }
 
     return (
-        <div className="max-w-2xl mx-auto px-4 py-8">
-            <div className="p-4 bg-gray-100 rounded-md shadow-md border my-8">
-                <H2>Account information</H2>
-                <p>{thisUser.name} / {thisUser.email}</p>
-                <img src={thisUser.image} alt="Profile picture" />
-                <button onClick={() => signOut()}>Sign out</button>
-            </div>
-            <hr className="my-8"/>
-            <H1>Immunity graph</H1>
-            <div className="relative overflow-y-hidden" style={{height: 400, width: "100%"}}>
-                <svg ref={axisRef} className="absolute top-0 left-0 w-full" style={{height: 400}}/>
-                <div className="absolute top-0 left-0 w-full overflow-x-auto overflow-y-hidden" style={{height: 400}}>
-                    <svg ref={svgRef}/>
+        <>
+            <Navbar thisUser={thisUser}/>
+            <div className="max-w-2xl mx-auto px-4 py-8">
+                <H1>Immunity graph</H1>
+                <div className="relative overflow-y-hidden" style={{height: 400, width: "100%"}}>
+                    <svg ref={axisRef} className="absolute top-0 left-0 w-full" style={{height: 400}}/>
+                    <div className="absolute top-0 left-0 w-full overflow-x-auto overflow-y-hidden" style={{height: 400}}>
+                        <svg ref={svgRef}/>
+                    </div>
                 </div>
-            </div>
-            <hr className="my-8"/>
-            <H1>Vaccinations</H1>
-            <H2>Add vaccination</H2>
-            <div className="flex items-center">
-                <input type="date" min="2019-01-01" max={format(addDays(new Date(), 1), "yyyy-MM-dd")} className="p-2 border mr-4" value={date} onChange={e => setDate(e.target.value)}/>
-                <select className="p-2 border mr-4" value={vaxId} onChange={e => setVaxId(e.target.value)}>
-                    {vaxModels.map(d => (
-                        <option value={d} key={d}>{d}</option>
-                    ))}
-                </select>
-                <button onClick={onAdd} className="p-2 bg-black text-white disabled:opacity-50" disabled={!date}>Add</button>
-            </div>
-            <H2>Vaccination record</H2>
-            {vaxEvents.map(d => (
-                <div className="p-4 border rounded-md my-2 shadow-md" key={d._id.toString()}>
-                    <p>{format(dateOnly(d.date), "MMMM d, yyyy")}, {d.vaxId}</p>
-                    <button className="bg-black p-2 text-white" onClick={() => onDelete(d._id.toString())}>Delete</button>
+                <hr className="my-8"/>
+                <H1>Vaccinations</H1>
+                <H2>Add vaccination</H2>
+                <div className="flex items-center">
+                    <input type="date" min="2019-01-01" max={format(addDays(new Date(), 1), "yyyy-MM-dd")} className="p-2 border mr-4" value={date} onChange={e => setDate(e.target.value)}/>
+                    <select className="p-2 border mr-4" value={vaxId} onChange={e => setVaxId(e.target.value)}>
+                        {vaxModels.map(d => (
+                            <option value={d} key={d}>{d}</option>
+                        ))}
+                    </select>
+                    <button onClick={onAdd} className="p-2 bg-black text-white disabled:opacity-50" disabled={!date}>Add</button>
                 </div>
-            ))}
-        </div>
+                <H2>Vaccination record</H2>
+                {vaxEvents.map(d => (
+                    <div className="p-4 border rounded-md my-2 shadow-md" key={d._id.toString()}>
+                        <p>{format(dateOnly(d.date), "MMMM d, yyyy")}, {d.vaxId}</p>
+                        <button className="bg-black p-2 text-white" onClick={() => onDelete(d._id.toString())}>Delete</button>
+                    </div>
+                ))}
+            </div>
+        </>
     );
 }
 
