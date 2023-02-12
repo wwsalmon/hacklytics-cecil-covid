@@ -1,4 +1,4 @@
-,study ID,vaccine,dose,VE,LCL,UCL,days_since_first_dose,population_category,outcome_category,variant_sequenced,time_sup,time_inf
+,study ID,vaccine,dose,VE,LCL,UCL,days_since_dose,population_category,outcome_category,variant_sequenced,time_sup,time_inf
 0,1,Pfizer,1,75.0,72,84.0,28,HCW,infection,,28,28
 1,1,Pfizer,1,85.0,71,92.0,28,HCW,symptomatic,,28,28
 2,2,Pfizer,1,57.0,48,63.0,28,> 80 years,symptomatic,,28,28
