@@ -1,0 +1,768 @@
+,Study ID,first author,booster vaccine,reference group,VE,LCL,UCL,timing_of_dose_days,population_category,outcome_category,time_sup,time_inf
+2,2,Patalon,Pfizer,complete vaccination with 2 doses,85.0,83.0,86.0,17,≥ 40 years,infection,20,14
+3,2,Patalon,Pfizer,complete vaccination with 2 doses,86.0,85.0,87.0,46,≥ 40 years,infection,65,28
+4,2,Patalon,Pfizer,complete vaccination with 2 doses,87.0,85.0,87.0,17,≥ 40 years,infection,20,14
+5,2,Patalon,Pfizer,complete vaccination with 2 doses,83.0,82.0,85.0,46,≥ 40 years,infection,65,28
+6,2,Patalon,Pfizer,complete vaccination with 2 doses,92.0,87.0,95.0,17,≥ 40 years,severe,20,14
+7,2,Patalon,Pfizer,complete vaccination with 2 doses,97.0,95.0,98.0,46,≥ 40 years,severe,65,28
+42,11,Andrews,Pfizer,unvaccinated individuals,68.7,67.9,69.5,21,general pop,symptomatic,28,14
+44,11,Andrews,Moderna,unvaccinated individuals,74.7,73.7,75.7,21,general pop,symptomatic,28,14
+45,11,Andrews,Moderna,unvaccinated individuals,65.3,63.1,67.4,49,general pop,symptomatic,63,35
+46,11,Andrews,Pfizer,unvaccinated individuals,62.7,62.0,63.4,21,general pop,symptomatic,28,14
+48,11,Andrews,Moderna,unvaccinated individuals,70.3,69.5,71.0,21,general pop,symptomatic,28,14
+49,11,Andrews,Moderna,unvaccinated individuals,61.6,60.0,63.1,49,general pop,symptomatic,63,35
+50,11,Andrews,Pfizer,unvaccinated individuals,67.0,63.0,70.0,21,general pop,symptomatic,28,14
+51,11,Andrews,Moderna,unvaccinated individuals,68.0,64.0,72.0,21,general pop,symptomatic,28,14
+52,11,Andrews,Pfizer,unvaccinated individuals,95.2,94.9,95.5,21,general pop,symptomatic,28,14
+54,11,Andrews,Moderna,unvaccinated individuals,96.8,96.2,97.3,21,general pop,symptomatic,28,14
+55,11,Andrews,Moderna,unvaccinated individuals,94.7,92.7,96.2,49,general pop,symptomatic,63,35
+56,11,Andrews,Pfizer,unvaccinated individuals,95.4,95.2,95.7,21,general pop,symptomatic,28,14
+58,11,Andrews,Moderna,unvaccinated individuals,97.1,96.8,97.4,21,general pop,symptomatic,28,14
+59,11,Andrews,Moderna,unvaccinated individuals,94.9,93.6,95.9,49,general pop,symptomatic,63,35
+60,11,Andrews,Pfizer,unvaccinated individuals,97.3,91.5,99.1,21,general pop,symptomatic,28,14
+61,11,Andrews,Moderna,unvaccinated individuals,95.8,88.8,98.4,21,general pop,symptomatic,28,14
+72,14,Hansen,Pfizer,complete vaccination with 2 doses in 60+ year olds,54.6,30.4,70.4,15,≥ 60 years,infection,30,1
+73,14,Hansen,Pfizer,complete vaccination with 2 doses in 60+ year olds,81.2,79.2,82.9,15,≥ 60 years,infection,30,1
+74,14,Hansen,Moderna,complete vaccination with 2 doses in 60+ year olds,82.8,58.8,92.9,15,≥ 60 years,infection,30,1
+78,17,Gray,Janssen,unvaccinated individuals,84.0,67.0,92.0,20,HCW,severe,27,14
+79,17,Gray,Janssen,unvaccinated individuals,85.0,54.0,95.0,45,HCW,severe,60,30
+80,17,Gray,Janssen,unvaccinated individuals,69.0,26.0,87.0,20,HCW,severe,27,14
+81,17,Gray,Janssen,unvaccinated individuals,82.0,57.0,93.0,57,HCW,severe,87,28
+101,20,Tseng,Moderna,unvaccinated individuals,71.6,69.7,73.4,37,general pop,infection,60,14
+106,20,Tseng,Moderna,unvaccinated individuals,93.7,92.2,94.9,37,general pop,infection,60,14
+199,37,Chemaitelly,Pfizer,unvaccinated individuals,90.9,78.6,96.1,24,general pop,severe,42,7
+201,37,Chemaitelly,Moderna,unvaccinated individuals,81.8,-49.5,97.8,24,general pop,severe,42,7
+203,38,Cerqueira-Silva,Pfizer,unvaccinated individuals,80.2,77.0,82.9,10,general pop,infection,13,7
+205,38,Cerqueira-Silva,Pfizer,unvaccinated individuals,91.0,88.5,93.5,10,general pop,severe,13,7
+207,38,Cerqueira-Silva,Pfizer,unvaccinated individuals,91.2,88.3,93.4,10,general pop,severe,13,7
+209,38,Cerqueira-Silva,Pfizer,unvaccinated individuals,92.2,87.4,95.2,10,general pop,death,13,7
+220,41,Regev-Yochay,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,30.0,-9.0,55.0,18,HCW,infection,29,8
+221,41,Regev-Yochay,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,43.0,7.0,65.0,18,HCW,symptomatic,29,8
+222,41,Regev-Yochay,Moderna,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,11.0,-43.0,43.0,15,HCW,infection,23,8
+223,41,Regev-Yochay,Moderna,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,31.0,-18.0,60.0,15,HCW,symptomatic,23,8
+224,42,Monge,Pfizer,complete vaccination with 2 doses (or 1 dose for Ad26.COV2.S) ≥3 months prior,49.7,48.3,51.1,20,≥ 40 years,infection,34,7
+225,42,Monge,Pfizer,complete vaccination with 2 doses (or 1 dose for Ad26.COV2.S) ≥3 months prior,55.3,52.3,58.2,20,≥ 40 years,infection,34,7
+226,42,Monge,Pfizer,complete vaccination with 2 doses (or 1 dose for Ad26.COV2.S) ≥3 months prior,58.6,55.5,61.6,20,≥ 40 years,infection,34,7
+227,42,Monge,Pfizer,complete vaccination with 2 doses (or 1 dose for Ad26.COV2.S) ≥3 months prior,48.0,42.5,53.7,20,≥ 40 years,infection,34,7
+228,43,Patalon,Pfizer,complete vaccination with 2 doses of BNT162b2 (Pfizer) ≥5 months prior,53.4,47.7,58.6,26,general pop,infection,51,1
+229,43,Patalon,Pfizer,complete vaccination with 2 doses of BNT162b2 (Pfizer) ≥5 months prior,3.6,0.6,6.5,117,general pop,infection,142,93
+230,44,Šmíd,Pfizer,unvaccinated individuals,58.0,58.0,59.0,44,general pop,infection,74,14
+232,44,Šmíd,Pfizer,unvaccinated individuals,86.0,84.0,89.0,44,general pop,severe,74,14
+234,44,Šmíd,Moderna,unvaccinated individuals,61.0,60.0,62.0,44,general pop,infection,74,14
+236,44,Šmíd,Moderna,unvaccinated individuals,89.0,84.0,93.0,44,general pop,severe,74,14
+238,44,Šmíd,Pfizer,unvaccinated individuals,90.0,90.0,91.0,44,general pop,infection,74,14
+240,44,Šmíd,Pfizer,unvaccinated individuals,98.0,97.0,98.0,44,general pop,severe,74,14
+242,44,Šmíd,Moderna,unvaccinated individuals,93.0,92.0,94.0,44,general pop,infection,74,14
+244,44,Šmíd,Moderna,unvaccinated individuals,98.0,97.0,99.0,44,general pop,severe,74,14
+266,49,Baum,Pfizer,unvaccinated individuals,95.0,94.0,96.0,37,≥ 70 years,severe,60,14
+268,49,Baum,Pfizer,unvaccinated individuals,98.0,95.0,99.0,37,≥ 70 years,severe,60,14
+270,49,Baum,Moderna,unvaccinated individuals,91.0,87.0,94.0,37,≥ 70 years,severe,60,14
+272,49,Baum,Moderna,unvaccinated individuals,92.0,79.0,97.0,37,≥ 70 years,severe,60,14
+274,49,Baum,Pfizer,unvaccinated individuals,91.0,81.0,96.0,37,≥ 70 years,severe,60,14
+276,49,Baum,Moderna,unvaccinated individuals,97.0,93.0,98.0,37,≥ 70 years,severe,60,14
+278,49,Baum,Pfizer,unvaccinated individuals,98.0,91.0,99.0,37,≥ 70 years,severe,60,14
+281,49,Baum,Moderna,unvaccinated individuals,94.0,82.0,98.0,37,≥ 70 years,severe,60,14
+284,49,Baum,Pfizer,unvaccinated individuals,96.0,93.0,97.0,37,≥ 70 years,severe,60,14
+286,49,Baum,Moderna,unvaccinated individuals,75.0,-3.0,94.0,37,≥ 70 years,severe,60,14
+287,49,Baum,Pfizer,unvaccinated individuals,82.0,28.0,96.0,37,≥ 70 years,severe,60,14
+289,49,Baum,Moderna,unvaccinated individuals,100.0,,,37,≥ 70 years,severe,60,14
+291,49,Baum,Pfizer,unvaccinated individuals,84.0,-16.0,98.0,37,≥ 70 years,severe,60,14
+292,49,Baum,Pfizer,unvaccinated individuals,94.0,92.0,95.0,37,≥ 70 years,severe,60,14
+294,49,Baum,Moderna,unvaccinated individuals,91.0,87.0,94.0,37,≥ 70 years,severe,60,14
+296,49,Baum,Pfizer,unvaccinated individuals,92.0,80.0,97.0,37,≥ 70 years,severe,60,14
+298,49,Baum,Moderna,unvaccinated individuals,96.0,91.0,98.0,37,≥ 70 years,severe,60,14
+300,49,Baum,Pfizer,unvaccinated individuals,99.0,91.0,100.0,37,≥ 70 years,severe,60,14
+302,49,Baum,Moderna,unvaccinated individuals,94.0,81.0,98.0,37,≥ 70 years,severe,60,14
+332,53,Stowe,Pfizer,unvaccinated individuals,83.0,78.0,85.0,10,18-64 years,severe,13,7
+334,53,Stowe,Pfizer,unvaccinated individuals,98.0,90.0,99.0,21,18-64 years,severe,28,14
+335,53,Stowe,Pfizer,unvaccinated individuals,90.0,77.0,98.0,84,18-64 years,severe,98,70
+336,53,Stowe,Moderna,unvaccinated individuals,90.0,79.0,92.0,10,18-64 years,severe,13,7
+338,53,Stowe,Moderna,unvaccinated individuals,97.0,64.0,100.0,21,18-64 years,severe,28,14
+339,53,Stowe,Moderna,unvaccinated individuals,97.0,72.0,99.0,49,18-64 years,severe,63,35
+340,53,Stowe,Pfizer,unvaccinated individuals,79.0,68.0,83.0,10,18-64 years,severe,13,7
+342,53,Stowe,Pfizer,unvaccinated individuals,99.0,90.0,100.0,21,18-64 years,severe,28,14
+343,53,Stowe,Pfizer,unvaccinated individuals,89.0,74.0,96.0,84,18-64 years,severe,98,70
+344,53,Stowe,Moderna,unvaccinated individuals,89.0,78.0,92.0,10,18-64 years,severe,13,7
+346,53,Stowe,Pfizer,unvaccinated individuals,96.0,78.0,98.0,10,≥ 65 years,severe,13,7
+348,53,Stowe,Pfizer,unvaccinated individuals,97.0,36.0,100.0,10,≥ 65 years,severe,13,7
+350,53,Stowe,Moderna,unvaccinated individuals,99.0,95.0,100.0,21,≥ 65 years,severe,28,14
+352,53,Stowe,Moderna,unvaccinated individuals,99.0,84.0,100.0,21,≥ 65 years,severe,28,14
+353,53,Stowe,Moderna,unvaccinated individuals,98.0,90.0,99.0,49,≥ 65 years,severe,63,35
+354,53,Stowe,Pfizer,unvaccinated individuals,90.0,59.0,98.0,10,≥ 65 years,severe,13,7
+356,53,Stowe,Pfizer,unvaccinated individuals,94.0,10.0,99.0,10,≥ 65 years,severe,13,7
+358,53,Stowe,Moderna,unvaccinated individuals,90.0,18.0,99.0,10,≥ 65 years,severe,13,7
+359,53,Stowe,Moderna,unvaccinated individuals,92.0,64.0,96.0,21,≥ 65 years,severe,28,14
+360,54,Gazit,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,57.7,55.6,59.7,10,≥ 60 years,infection,13,7
+361,54,Gazit,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,22.0,4.9,36.1,66,≥ 60 years,infection,69,63
+362,54,Gazit,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,77.5,69.7,83.2,17,≥ 60 years,severe,27,7
+363,54,Gazit,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,86.5,63.4,95.0,59,≥ 60 years,severe,69,49
+364,54,Gazit,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,46.0,43.7,48.3,10,≥ 60 years,infection,13,7
+365,54,Gazit,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,29.5,18.1,39.2,66,≥ 60 years,infection,69,63
+366,54,Gazit,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,73.3,66.3,78.9,17,≥ 60 years,severe,27,7
+367,54,Gazit,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,86.1,73.4,92.8,59,≥ 60 years,severe,69,49
+369,56,Wang,Pfizer,unvaccinated individuals,65.0,63.0,66.0,96,general pop,infection,179,14
+371,56,Wang,Pfizer,unvaccinated individuals,91.0,90.0,92.0,96,general pop,infection,179,14
+379,58,Hansen,Pfizer,unvaccinated individuals,47.9,47.4,48.2,22,general pop,infection,30,14
+381,58,Hansen,Pfizer,unvaccinated individuals,88.8,87.3,90.1,22,general pop,severe,30,14
+383,58,Hansen,Moderna,unvaccinated individuals,47.7,47.0,48.3,22,general pop,infection,30,14
+385,58,Hansen,Moderna,unvaccinated individuals,90.2,87.3,92.5,22,general pop,severe,30,14
+399,60,Glatman-Freedman,Pfizer,unvaccinated individuals,96.8,96.0,97.5,18,16-59 years,infection,21,15
+400,60,Glatman-Freedman,Pfizer,unvaccinated individuals,77.6,68.4,84.2,109,16-59 years,infection,112,106
+401,60,Glatman-Freedman,Pfizer,unvaccinated individuals,93.1,91.8,94.2,18,≥ 60 years,infection,21,15
+402,60,Glatman-Freedman,Pfizer,unvaccinated individuals,61.3,52.5,68.4,137,≥ 60 years,infection,140,134
+403,61,Ranzani,Coronavac (Sinovac),complete vaccination with 2 doses of CoronaVac ≥6 months prior,4.9,1.5,8.1,33,general pop,symptomatic,59,8
+405,61,Ranzani,Coronavac (Sinovac),complete vaccination with 2 doses of CoronaVac ≥6 months prior,47.1,27.8,61.2,33,general pop,severe,59,8
+407,61,Ranzani,Pfizer,complete vaccination with 2 doses of CoronaVac ≥6 months prior,53.5,52.9,54.2,33,general pop,symptomatic,59,8
+409,61,Ranzani,Pfizer,complete vaccination with 2 doses of CoronaVac ≥6 months prior,67.3,63.9,70.4,33,general pop,severe,59,8
+411,61,Ranzani,Coronavac (Sinovac),unvaccinated individuals,8.6,5.6,11.5,33,general pop,symptomatic,59,8
+413,61,Ranzani,Coronavac (Sinovac),unvaccinated individuals,73.6,63.9,80.7,33,general pop,severe,59,8
+415,61,Ranzani,Pfizer,unvaccinated individuals,56.8,56.3,57.3,33,general pop,symptomatic,59,8
+417,61,Ranzani,Pfizer,unvaccinated individuals,86.0,84.5,87.4,33,general pop,severe,59,8
+419,61,Ranzani,Coronavac (Sinovac),unvaccinated individuals,57.1,50.4,62.9,33,general pop,symptomatic,59,8
+421,61,Ranzani,Coronavac (Sinovac),unvaccinated individuals,75.9,67.8,81.9,33,general pop,severe,59,8
+423,61,Ranzani,Pfizer,unvaccinated individuals,86.7,86.0,87.4,33,general pop,symptomatic,59,8
+425,61,Ranzani,Pfizer,unvaccinated individuals,92.3,91.0,92.9,33,general pop,severe,59,8
+445,69,Cerqueira-Silva ,Pfizer,"unvaccinated individuals, previously infected",56.4,53.7,59.0,41,general pop,symptomatic,69,14
+447,69,Cerqueira-Silva ,Pfizer,"unvaccinated individuals, previously infected",75.0,53.3,86.7,41,general pop,severe,69,14
+448,69,Cerqueira-Silva ,AZD1222 (AstraZeneca),"unvaccinated individuals, previously infected",60.5,59.1,61.9,41,general pop,symptomatic,69,14
+450,69,Cerqueira-Silva ,AZD1222 (AstraZeneca),"unvaccinated individuals, previously infected",84.5,79.4,88.4,41,general pop,severe,69,14
+452,69,Cerqueira-Silva ,Janssen,"unvaccinated individuals, previously infected",22.8,18.8,26.6,41,general pop,symptomatic,69,14
+453,69,Cerqueira-Silva ,Janssen,"unvaccinated individuals, previously infected",84.0,56.5,94.1,41,general pop,severe,69,14
+454,69,Cerqueira-Silva ,CoronaVac (Sinovac),"unvaccinated individuals, previously infected",62.7,61.0,64.3,41,general pop,symptomatic,69,14
+456,69,Cerqueira-Silva ,CoronaVac (Sinovac),"unvaccinated individuals, previously infected",76.6,68.1,82.8,41,general pop,severe,69,14
+458,69,Cerqueira-Silva ,Pfizer,"unvaccinated individuals, previously infected",58.1,55.3,60.6,41,general pop,symptomatic,69,14
+460,69,Cerqueira-Silva ,Pfizer,"unvaccinated individuals, previously infected",85.2,55.7,95.1,41,general pop,severe,69,14
+461,69,Cerqueira-Silva ,AZD1222 (AstraZeneca),"unvaccinated individuals, previously infected",61.3,59.9,62.7,41,general pop,symptomatic,69,14
+463,69,Cerqueira-Silva ,AZD1222 (AstraZeneca),"unvaccinated individuals, previously infected",89.7,81.5,94.3,41,general pop,severe,69,14
+465,69,Cerqueira-Silva ,Janssen,"unvaccinated individuals, previously infected",24.5,20.6,28.2,41,general pop,symptomatic,69,14
+466,69,Cerqueira-Silva ,Janssen,"unvaccinated individuals, previously infected",16.2,-4.7,33.0,104,general pop,symptomatic,139,70
+467,69,Cerqueira-Silva ,Janssen,"unvaccinated individuals, previously infected",92.3,64.7,98.3,41,general pop,severe,69,14
+468,69,Cerqueira-Silva ,CoronaVac (Sinovac),"unvaccinated individuals, previously infected",62.9,61.2,64.5,41,general pop,symptomatic,69,14
+470,69,Cerqueira-Silva ,CoronaVac (Sinovac),"unvaccinated individuals, previously infected",81.0,64.0,90.0,41,general pop,severe,69,14
+472,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,45.0,44.0,47.0,18,≥ 60 years,infection,30,7
+473,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,52.0,49.0,54.0,22,≥ 60 years,infection,30,14
+474,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,55.0,53.0,58.0,18,≥ 60 years,symptomatic,30,7
+475,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,61.0,58.0,64.0,22,≥ 60 years,symptomatic,30,14
+476,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,68.0,59.0,74.0,18,≥ 60 years,severe,30,7
+477,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,72.0,63.0,79.0,22,≥ 60 years,severe,30,14
+478,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,62.0,50.0,74.0,18,≥ 60 years,severe,30,7
+479,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,64.0,48.0,77.0,22,≥ 60 years,severe,30,14
+480,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,74.0,50.0,90.0,18,≥ 60 years,death,30,7
+481,70,Magen,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥4 months prior,76.0,48.0,91.0,22,≥ 60 years,death,30,14
+484,72,Vokó,Pfizer,unvaccinated individuals,82.2,81.5,82.8,67,18-64 years,infection,120,14
+485,72,Vokó,Moderna,unvaccinated individuals,85.8,82.6,88.4,67,18-64 years,infection,120,14
+486,72,Vokó,Sinopharm,unvaccinated individuals,24.5,15.4,32.5,67,18-64 years,infection,120,14
+487,72,Vokó,Janssen,unvaccinated individuals,82.4,78.9,85.3,67,18-64 years,infection,120,14
+488,72,Vokó,Pfizer,unvaccinated individuals,94.3,93.3,95.1,67,18-64 years,severe,120,14
+489,72,Vokó,Moderna,unvaccinated individuals,93.3,85.2,97.0,67,18-64 years,severe,120,14
+490,72,Vokó,Sinopharm,unvaccinated individuals,76.0,60.9,85.3,67,18-64 years,severe,120,14
+491,72,Vokó,Janssen,unvaccinated individuals,96.8,90.0,99.0,67,18-64 years,severe,120,14
+492,72,Vokó,Pfizer,unvaccinated individuals,96.8,95.2,97.9,67,18-64 years,death,120,14
+493,72,Vokó,Moderna,unvaccinated individuals,95.5,67.9,99.4,67,18-64 years,death,120,14
+494,72,Vokó,Sinopharm,unvaccinated individuals,100.0,,,67,18-64 years,death,120,14
+495,72,Vokó,Janssen,unvaccinated individuals,100.0,,,67,18-64 years,death,120,14
+496,72,Vokó,Moderna,unvaccinated individuals,88.9,86.9,90.6,67,18-64 years,infection,120,14
+497,72,Vokó,Pfizer,unvaccinated individuals,87.7,85.1,88.4,67,18-64 years,infection,120,14
+498,72,Vokó,Sinopharm,unvaccinated individuals,69.5,52.1,80.5,67,18-64 years,infection,120,14
+499,72,Vokó,Janssen,unvaccinated individuals,82.1,73.0,88.1,67,18-64 years,infection,120,14
+500,72,Vokó,Moderna,unvaccinated individuals,96.5,92.5,98.3,67,18-64 years,severe,120,14
+501,72,Vokó,Pfizer,unvaccinated individuals,97.3,92.7,99.0,67,18-64 years,severe,120,14
+502,72,Vokó,Sinopharm,unvaccinated individuals,92.0,43.0,98.9,67,18-64 years,severe,120,14
+503,72,Vokó,Janssen,unvaccinated individuals,100.0,,,67,18-64 years,severe,120,14
+504,72,Vokó,Sinopharm,unvaccinated individuals,70.7,107.9,95.9,67,18-64 years,death,120,14
+505,72,Vokó,Moderna,unvaccinated individuals,100.0,,,67,18-64 years,death,120,14
+506,72,Vokó,Pfizer,unvaccinated individuals,100.0,,,67,18-64 years,death,120,14
+507,72,Vokó,Janssen,unvaccinated individuals,84.1,-12.6,97.8,67,18-64 years,death,120,14
+508,72,Vokó,Pfizer,unvaccinated individuals,82.9,81.9,83.8,67,18-64 years,infection,120,14
+509,72,Vokó,Moderna,unvaccinated individuals,84.1,81.2,86.5,67,18-64 years,infection,120,14
+510,72,Vokó,Sinopharm,unvaccinated individuals,35.8,14.2,51.9,67,18-64 years,infection,120,14
+511,72,Vokó,Pfizer,unvaccinated individuals,95.1,93.8,96.2,67,18-64 years,severe,120,14
+512,72,Vokó,Moderna,unvaccinated individuals,98.5,93.9,99.6,67,18-64 years,severe,120,14
+513,72,Vokó,Sinopharm,unvaccinated individuals,84.6,38.9,96.2,67,18-64 years,severe,120,14
+514,72,Vokó,Pfizer,unvaccinated individuals,98.4,96.5,99.3,67,18-64 years,death,120,14
+515,72,Vokó,Moderna,unvaccinated individuals,100.0,,,67,18-64 years,death,120,14
+516,72,Vokó,Sinopharm,unvaccinated individuals,100.0,,,67,18-64 years,death,120,14
+517,72,Vokó,Pfizer,unvaccinated individuals,83.6,82.8,84.4,67,18-64 years,infection,120,14
+518,72,Vokó,Moderna,unvaccinated individuals,84.0,81.5,86.2,67,18-64 years,infection,120,14
+519,72,Vokó,Sinopharm,unvaccinated individuals,38.9,22.2,52.0,67,18-64 years,infection,120,14
+520,72,Vokó,Janssen,unvaccinated individuals,47.2,41.2,52.6,67,18-64 years,infection,120,14
+521,72,Vokó,Pfizer,unvaccinated individuals,98.0,97.1,98.6,67,18-64 years,severe,120,14
+522,72,Vokó,Moderna,unvaccinated individuals,97.0,92.1,98.9,67,18-64 years,severe,120,14
+523,72,Vokó,Sinopharm,unvaccinated individuals,66.8,20.1,86.2,67,18-64 years,severe,120,14
+524,72,Vokó,Janssen,unvaccinated individuals,95.1,84.8,98.4,67,18-64 years,severe,120,14
+525,72,Vokó,Pfizer,unvaccinated individuals,99.2,97.4,99.7,67,18-64 years,death,120,14
+526,72,Vokó,Moderna,unvaccinated individuals,100.0,,,67,18-64 years,death,120,14
+527,72,Vokó,Janssen,unvaccinated individuals,100.0,,,67,18-64 years,death,120,14
+528,72,Vokó,Sinopharm,unvaccinated individuals,60.6,53.4,66.7,67,18-64 years,infection,120,14
+529,72,Vokó,Pfizer,unvaccinated individuals,88.0,87.2,88.7,67,18-64 years,infection,120,14
+530,72,Vokó,Moderna,unvaccinated individuals,91.0,88.2,93.1,67,18-64 years,infection,120,14
+531,72,Vokó,Janssen,unvaccinated individuals,78.1,74.7,81.0,67,18-64 years,infection,120,14
+532,72,Vokó,Sinopharm,unvaccinated individuals,77.5,58.2,87.9,67,18-64 years,severe,120,14
+533,72,Vokó,Pfizer,unvaccinated individuals,94.6,93.3,95.6,67,18-64 years,severe,120,14
+534,72,Vokó,Moderna,unvaccinated individuals,94.8,87.6,97.9,67,18-64 years,severe,120,14
+535,72,Vokó,Janssen,unvaccinated individuals,95.3,88.7,98.0,67,18-64 years,severe,120,14
+536,72,Vokó,Sinopharm,unvaccinated individuals,91.1,36.4,98.7,67,18-64 years,death,120,14
+537,72,Vokó,Pfizer,unvaccinated individuals,95.9,93.4,97.5,67,18-64 years,death,120,14
+538,72,Vokó,Janssen,unvaccinated individuals,95.8,70.0,99.4,67,18-64 years,death,120,14
+539,72,Vokó,Moderna,unvaccinated individuals,100.0,,,67,18-64 years,death,120,14
+540,72,Vokó,Janssen,unvaccinated individuals,78.1,74.7,81.0,67,18-64 years,infection,120,14
+541,72,Vokó,Pfizer,unvaccinated individuals,90.9,84.6,94.6,67,18-64 years,infection,120,14
+542,72,Vokó,Janssen,unvaccinated individuals,76.7,-65.9,96.7,67,18-64 years,severe,120,14
+543,72,Vokó,Pfizer,unvaccinated individuals,92.2,68.8,98.0,67,18-64 years,severe,120,14
+574,74,Gram,Pfizer,unvaccinated individuals,55.2,54.7,55.6,22,12-59 years,infection,30,14
+576,74,Gram,Pfizer,unvaccinated individuals,89.8,87.9,91.3,22,12-59 years,severe,30,14
+578,74,Gram,Pfizer,unvaccinated individuals,89.5,87.7,91.0,22,12-59 years,infection,30,14
+579,74,Gram,Pfizer,unvaccinated individuals,83.5,69.4,91.1,75,12-59 years,infection,90,61
+580,74,Gram,Pfizer,unvaccinated individuals,94.8,85.9,98.1,22,12-59 years,severe,30,14
+581,74,Gram,Pfizer,unvaccinated individuals,68.4,41.4,83.0,45,12-59 years,severe,60,31
+582,74,Gram,Pfizer,unvaccinated individuals,57.6,55.8,59.4,22,≥ 60 years,infection,30,14
+584,74,Gram,Pfizer,unvaccinated individuals,94.4,93.0,95.5,22,≥ 60 years,severe,30,14
+586,74,Gram,Pfizer,unvaccinated individuals,86.0,83.3,88.3,22,≥ 60 years,infection,30,14
+587,74,Gram,Pfizer,unvaccinated individuals,81.2,72.9,87.0,75,≥ 60 years,infection,90,61
+588,74,Gram,Pfizer,unvaccinated individuals,96.6,93.9,98.1,45,≥ 60 years,severe,60,31
+589,74,Gram,Pfizer,unvaccinated individuals,91.4,79.8,96.4,105,≥ 60 years,severe,120,91
+590,75,Lind,Pfizer,complete vaccination with 2 doses ≥5 months prior,55.0,48.0,61.0,36,general pop,infection,59,14
+600,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,51.6,51.0,52.2,21,general pop,symptomatic,29,14
+602,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,93.5,93.0,94.0,21,general pop,severe,29,14
+604,77,Cerqueira-Silva ,Pfizer,complete vaccination with AZD1222,50.9,50.4,51.4,21,general pop,symptomatic,29,14
+606,77,Cerqueira-Silva ,Pfizer,complete vaccination with AZD1222,79.0,77.3,80.6,21,general pop,severe,29,14
+608,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,44.6,43.4,45.8,21,general pop,symptomatic,29,14
+610,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,92.7,91.0,94.0,21,general pop,severe,29,14
+612,78,Cerqueira-Silva ,Pfizer,complete vaccination with BNT162b2,40.5,39.3,41.7,21,general pop,symptomatic,29,14
+614,80,Cerqueira-Silva ,Pfizer,complete vaccination with BNT162b2,54.6,43.9,63.2,21,general pop,severe,29,14
+616,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,67.1,65.5,68.5,21,general pop,symptomatic,29,14
+618,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,98.3,87.3,99.8,21,general pop,severe,29,14
+620,77,Cerqueira-Silva ,Pfizer,complete vaccination with BNT162b2,63.1,61.4,64.7,21,general pop,symptomatic,29,14
+622,77,Cerqueira-Silva ,Pfizer,complete vaccination with BNT162b2,85.2,67.3,93.3,21,general pop,severe,29,14
+624,77,Cerqueira-Silva ,Moderna,unvaccinated individuals,71.7,69.9,73.3,21,general pop,symptomatic,29,14
+626,77,Cerqueira-Silva ,Moderna,unvaccinated individuals,94.4,87.7,97.5,21,general pop,severe,29,14
+628,77,Cerqueira-Silva ,Moderna,complete vaccination with AZD1222,68.4,66.4,70.3,21,general pop,symptomatic,29,14
+630,77,Cerqueira-Silva ,Moderna,complete vaccination with AZD1222,95.5,67.3,99.4,21,general pop,severe,29,14
+632,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,40.6,20.9,55.4,18,general pop,symptomatic,29,7
+634,77,Cerqueira-Silva ,Pfizer,complete vaccination with AZD1222,34.4,12.5,50.8,18,general pop,symptomatic,29,7
+636,77,Cerqueira-Silva ,Moderna,unvaccinated individuals,47.5,21.5,64.9,18,general pop,symptomatic,29,7
+638,77,Cerqueira-Silva ,Moderna,complete vaccination with AZD1222,40.8,11.4,60.5,18,general pop,symptomatic,29,7
+640,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,69.1,67.6,70.5,21,general pop,symptomatic,29,14
+642,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,95.3,85.1,98.5,21,general pop,severe,29,14
+644,77,Cerqueira-Silva ,Pfizer,complete vaccination with BNT162b2,62.7,61.0,64.4,21,general pop,symptomatic,29,14
+646,77,Cerqueira-Silva ,Pfizer,complete vaccination with BNT162b2,78.2,27.7,93.4,21,general pop,severe,29,14
+648,77,Cerqueira-Silva ,Moderna,unvaccinated individuals,71.9,70.0,73.7,21,general pop,symptomatic,29,14
+650,77,Cerqueira-Silva ,Moderna,unvaccinated individuals,96.1,72.1,99.5,21,general pop,severe,29,14
+652,77,Cerqueira-Silva ,Moderna,complete vaccination with BNT162b2,66.2,63.9,68.4,21,general pop,symptomatic,29,14
+654,77,Cerqueira-Silva ,Moderna,complete vaccination with BNT162b2,78.3,-60.8,97.1,21,general pop,severe,29,14
+656,77,Cerqueira-Silva ,Pfizer,unvaccinated individuals,61.1,43.6,73.2,18,general pop,symptomatic,29,7
+658,77,Cerqueira-Silva ,Pfizer,complete vaccination with BNT162b2,50.0,27.3,65.6,18,general pop,symptomatic,29,7
+660,77,Cerqueira-Silva ,Moderna,unvaccinated individuals,69.2,46.5,82.3,18,general pop,symptomatic,29,7
+662,77,Cerqueira-Silva ,Moderna,complete vaccination with BNT162b2,61.0,32.2,77.6,18,general pop,symptomatic,29,7
+664,78,Castillo,Pfizer,unvaccinated individuals without prior infection,64.0,63.0,64.0,11,general pop,symptomatic,14,8
+666,78,Castillo,Pfizer,unvaccinated individuals without prior infection,90.0,87.0,92.0,11,general pop,severe,14,8
+668,78,Castillo,Pfizer,unvaccinated individuals without prior infection,96.0,92.0,99.0,11,general pop,severe,14,8
+670,78,Castillo,Pfizer,unvaccinated individuals without prior infection,95.0,89.0,100.0,11,general pop,death,14,8
+672,78,Castillo,Pfizer,unvaccinated individuals without prior infection,84.0,79.0,88.0,11,general pop,symptomatic,14,8
+674,78,Castillo,Pfizer,unvaccinated individuals without prior infection,98.0,98.0,99.0,11,general pop,severe,14,8
+676,78,Castillo,Pfizer,unvaccinated individuals without prior infection,99.0,98.0,99.0,11,general pop,severe,14,8
+678,78,Castillo,Pfizer,unvaccinated individuals without prior infection,98.0,96.0,100.0,11,general pop,death,14,8
+692,80,Kirsebom,AZD1222 (AstraZeneca),unvaccinated individuals,51.7,38.9,61.8,24,40-64 years,symptomatic,34,14
+694,80,Kirsebom,Pfizer,unvaccinated individuals,63.8,63.0,64.5,24,40-64 years,symptomatic,34,14
+696,80,Kirsebom,AZD1222 (AstraZeneca),unvaccinated individuals,51.6,20.8,70.4,24,≥ 65 years,symptomatic,34,14
+697,80,Kirsebom,AZD1222 (AstraZeneca),unvaccinated individuals,-27.2,-131.6,30.1,87,≥ 65 years,symptomatic,104,70
+699,80,Kirsebom,Pfizer,unvaccinated individuals,58.1,51.6,63.8,24,≥ 65 years,symptomatic,34,14
+717,83,Butt,Pfizer,"complete vaccination with 2 doses of BNT162b2 (Pfizer) by April 30, 2021",90.0,22.0,99.0,42,general pop,severe,56,28
+727,83,Butt,Moderna,"complete vaccination with 2 doses of mRNA-1273 (Moderna) by April 30, 2021",50.0,-68.0,85.0,42,general pop,severe,56,28
+739,84,Amir,Pfizer,complete vaccination with 2 doses of BNT162b2 (Pfizer) ≥4 months prior,57.0,37.5,71.0,15,≥ 60 years,severe,30,0
+740,84,Amir,Pfizer,complete vaccination with 2 doses of BNT162b2 (Pfizer) ≥4 months prior,67.8,59.0,75.6,195,≥ 60 years,severe,210,180
+741,84,Amir,Pfizer,complete vaccination with 2 doses of BNT162b2 (Pfizer) ≥4 months prior,89.2,88.0,91.0,30,≥ 60 years,severe,60,0
+746,86,Fano,Pfizer,unvaccinated individuals,69.1,67.5,70.7,17,general pop,infection,19,15
+748,86,Fano,AZD1222 (AstraZeneca),unvaccinated individuals,59.9,56.4,63.0,17,general pop,infection,19,15
+750,86,Fano,Janssen,unvaccinated individuals,52.8,47.2,57.9,17,general pop,infection,19,15
+752,86,Fano,Pfizer,unvaccinated individuals,28.0,0.0,48.5,12,general pop,infection,14,10
+754,87,Amir,Pfizer,unvaccinated individuals,80.0,76.7,83.1,37,12-15 years,infection,60,14
+755,87,Amir,Pfizer,complete vaccination with 2 doses 120+ days prior,76.2,72.2,79.6,37,12-15 years,infection,60,14
+768,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,49.6,48.3,50.8,14,general pop,infection,28,1
+769,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,49.7,47.8,51.5,49,general pop,infection,70,29
+770,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,73.8,68.9,77.9,14,general pop,severe,28,1
+771,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,86.1,81.9,89.4,49,general pop,severe,70,29
+772,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,92.6,86.5,96.0,49,general pop,death,70,29
+773,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,49.2,48.4,50.0,14,general pop,infection,28,1
+774,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,54.8,53.3,56.3,49,general pop,infection,70,29
+775,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,78.2,75.2,80.8,14,general pop,severe,28,1
+776,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,83.9,80.0,87.1,49,general pop,severe,70,29
+777,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,77.4,66.3,84.9,14,general pop,death,28,1
+778,91,Hulme,Pfizer,complete vaccination with 2 doses of AZD1222 or BNT162b2,93.5,87.6,96.6,49,general pop,death,70,29
+828,99,Breznik,Pfizer,complete vaccination with 3 doses,81.0,70.0,88.0,90,nursing and retirement home residents,infection,120,60
+858,104,Link-Gelles,Pfizer,unvaccinated individuals,84.0,83.0,85.0,63,general pop,symptomatic,119,7
+860,104,Link-Gelles,Pfizer,unvaccinated individuals,92.0,91.0,93.0,63,general pop,severe,119,7
+862,104,Link-Gelles,Pfizer,unvaccinated individuals,56.0,51.0,61.0,63,general pop,symptomatic,119,7
+864,104,Link-Gelles,Pfizer,unvaccinated individuals,69.0,58.0,76.0,63,general pop,severe,119,7
+868,105,Hertz,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥3 months prior,45.5,19.0,63.0,19,HCW,symptomatic,30,8
+869,105,Hertz,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) ≥3 months prior,37.0,15.0,53.0,75,HCW,symptomatic,90,60
+870,106,Cerqueira-Silva ,Pfizer,unvaccinated individuals,63.6,62.8,64.3,22,general pop,symptomatic,30,14
+872,106,Cerqueira-Silva ,Pfizer,unvaccinated individuals,89.4,87.8,90.7,22,general pop,death,30,14
+874,106,Cerqueira-Silva ,Pfizer,unvaccinated individuals,90.2,87.6,92.3,22,general pop,death,30,14
+876,106,Cerqueira-Silva ,Pfizer,complete vaccination with 2 doses at least 4 months prior,62.9,62.1,63.7,22,general pop,symptomatic,30,14
+878,106,Cerqueira-Silva ,Pfizer,complete vaccination with 2 doses at least 4 months prior,71.2,67.1,74.9,22,general pop,death,30,14
+900,110,Stirrup,Pfizer,complete vaccination with 2 doses at least 84 days prior,72.0,67.0,76.0,31,LTCF staff,infection,48,14
+902,110,Stirrup,Pfizer,complete vaccination with 2 doses at least 84 days prior,63.0,54.0,70.0,31,LTCF staff,infection,48,14
+904,110,Stirrup,Pfizer,complete vaccination with 2 doses at least 84 days prior,80.0,67.0,88.0,31,LTCF staff,infection,48,14
+906,110,Stirrup,Pfizer,complete vaccination with 2 doses at least 84 days prior,75.0,52.0,87.0,31,LTCF staff,infection,48,14
+920,113,Kim,Pfizer,unvaccinated individuals,56.3,50.0,61.7,21,12-18 years,infection,29,14
+921,113,Kim,Pfizer,unvaccinated individuals,55.2,47.3,61.9,44,12-18 years,infection,59,30
+939,115,Powell,Pfizer,unvaccinated individuals,62.9,60.5,65.1,59,11-17 years,symptomatic,104,14
+940,115,Powell,Pfizer,unvaccinated individuals,33.6,14.6,48.3,139,11-17 years,symptomatic,174,105
+941,115,Powell,Pfizer,unvaccinated individuals,96.0,92.2,97.9,59,11-17 years,symptomatic,104,14
+964,119,Ng,Pfizer,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,31.7,30.0,33.4,37,≥ 30 years,infection,60,15
+965,119,Ng,Pfizer,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,-2.8,-5.4,0.3,225,≥ 30 years,infection,330,121
+966,119,Ng,Pfizer,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,85.2,80.2,88.9,37,≥ 30 years,severe,60,15
+967,119,Ng,Pfizer,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,87.3,84.2,89.8,225,≥ 30 years,severe,330,121
+968,119,Ng,Moderna,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,41.3,39.4,43.1,37,≥ 30 years,infection,60,15
+969,119,Ng,Moderna,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,14.6,11.0,18.0,225,≥ 30 years,infection,330,121
+970,119,Ng,Moderna,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,97.5,89.7,99.4,37,≥ 30 years,severe,60,15
+971,119,Ng,Moderna,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,89.0,78.9,94.2,225,≥ 30 years,severe,330,121
+972,119,Ng,Moderna,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,34.9,33.0,36.8,37,≥ 30 years,infection,60,15
+973,119,Ng,Moderna,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,3.69,0.03,7.21,225,≥ 30 years,infection,330,121
+974,119,Ng,Moderna,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,87.3,72.8,94.1,37,≥ 30 years,severe,60,15
+975,119,Ng,Moderna,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,84.4,73.4,90.9,225,≥ 30 years,severe,330,121
+976,119,Ng,Pfizer,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,35.6,32.8,38.3,37,≥ 30 years,infection,60,15
+977,119,Ng,Pfizer,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,9.7,2.7,16.3,225,≥ 30 years,infection,330,121
+978,119,Ng,Pfizer,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,100.0,-inf,100.0,37,≥ 30 years,severe,60,15
+979,119,Ng,Pfizer,complete vaccination with 2 doses of any mRNA vaccine 5 months prior,86.3,44.7,96.6,225,≥ 30 years,severe,330,121
+980,120,Cocchio,Pfizer,unvaccinated individuals,72.0,70.0,73.0,24,12-17 years,infection,34,14
+981,120,Cocchio,Pfizer,unvaccinated individuals,30.0,27.0,33.0,52,12-17 years,infection,69,35
+982,120,Cocchio,Pfizer,unvaccinated individuals,71.0,66.0,74.0,24,12-17 years,infection,34,14
+983,120,Cocchio,Pfizer,unvaccinated individuals,32.0,26.0,38.0,52,12-17 years,infection,69,35
+984,121,Suphanchaimat,AZD1222 (AstraZeneca),unvaccinated individuals,99.1,93.6,99.9,44,general pop,infection,59,30
+985,121,Suphanchaimat,AZD1222 (AstraZeneca),unvaccinated individuals,97.9,91.4,99.5,74,general pop,infection,89,60
+986,121,Suphanchaimat,Pfizer,unvaccinated individuals,97.2,79.8,99.6,22,general pop,infection,29,15
+993,124,Huang,Ad5-nCoV (CanSino),unvaccinated individuals,16.0,1.5,28.4,129,general pop,infection,168,91
+996,126,Tan,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) or mRNA-1273 (Moderna) ≥5 months prior,35.0,31.0,40.0,19,80+ years,symptomatic,30,8
+999,126,Tan,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) or mRNA-1273 (Moderna) ≥5 months prior,58.0,50.0,64.0,19,80+ years,severe,30,8
+1002,126,Tan,Pfizer,complete vaccination with 3 doses of BNT162b2 (Pfizer) or mRNA-1273 (Moderna) ≥5 months prior,58.0,42.0,69.0,19,80+ years,severe,30,8
+1007,128,Collie,Pfizer,unvaccinated individuals,81.6,68.1,89.4,20,general pop,severe,27,14
+1008,128,Collie,Pfizer,unvaccinated individuals,50.0,4.4,73.0,105,general pop,severe,120,90
+1009,128,Collie,Pfizer,unvaccinated individuals,68.8,59.5,76.0,45,general pop,severe,60,30
+1010,128,Collie,Pfizer,unvaccinated individuals,46.8,35.3,56.2,105,general pop,severe,120,90
+1012,129,Schrag,Pfizer,unvaccinated individuals,79.0,59.0,89.0,63,pregnant persons,symptomatic,119,7
+1015,129,Schrag,Pfizer,unvaccinated individuals,86.0,28.0,97.0,63,pregnant persons,severe,119,7
+1044,132,Chiew,Pfizer,unvaccinated individuals,59.0,56.0,62.0,11,12-17 years,infection,14,8
+1047,132,Chiew,Pfizer,unvaccinated individuals,96.0,87.0,99.0,11,12-17 years,severe,14,8
+1060,134,Link-Gelles,Pfizer,unvaccinated individuals,56.0,45.0,65.0,63,general pop,symptomatic,119,7
+1062,134,Link-Gelles,Pfizer,unvaccinated individuals,54.0,23.0,72.0,63,general pop,severe,119,7
+1064,134,Link-Gelles,Moderna,unvaccinated individuals,72.0,61.0,80.0,63,general pop,symptomatic,119,7
+1066,134,Link-Gelles,Moderna,unvaccinated individuals,73.0,50.0,86.0,63,general pop,severe,119,7
+1068,134,Link-Gelles,Any mRNA - heterologous,unvaccinated individuals,70.0,52.0,81.0,63,general pop,symptomatic,119,7
+1071,134,Link-Gelles,Pfizer,unvaccinated individuals,60.0,50.0,68.0,33,≥ 50 years,symptomatic,59,7
+1073,134,Link-Gelles,Pfizer,unvaccinated individuals,44.0,18.0,62.0,33,≥ 50 years,severe,59,7
+1075,134,Link-Gelles,Moderna,unvaccinated individuals,67.0,56.0,76.0,33,≥ 50 years,symptomatic,59,7
+1077,134,Link-Gelles,Moderna,unvaccinated individuals,73.0,55.0,84.0,33,≥ 50 years,severe,59,7
+1079,134,Link-Gelles,Any mRNA - heterologous (4th dose),unvaccinated individuals,52.0,32.0,66.0,33,≥ 50 years,symptomatic,59,7
+1081,134,Link-Gelles,Any mRNA - heterologous (4th dose),unvaccinated individuals,65.0,36.0,80.0,33,≥ 50 years,severe,59,7
+1083,134,Link-Gelles,Pfizer,complete vaccination at least 150 days prior,46.0,39.0,58.0,63,general pop,symptomatic,119,7
+1084,134,Link-Gelles,Pfizer,complete vaccination at least 150 days prior,57.0,35.0,72.0,63,general pop,severe,119,7
+1085,134,Link-Gelles,Pfizer,receipt of 3 doses at least 150 days prior,35.0,28.0,41.0,63,≥ 65 years,symptomatic,119,7
+1086,134,Link-Gelles,Pfizer,receipt of 3 doses at least 150 days prior,37.0,25.0,46.0,63,≥ 65 years,severe,119,7
+1105,136,Lin,Pfizer,complete vaccination at least 120 days prior,51.6,48.9,54.1,30,≥ 5 years,infection,30,30
+1106,136,Lin,Pfizer,complete vaccination at least 120 days prior,16.5,14.1,18.8,90,≥ 5 years,infection,90,90
+1107,136,Lin,Moderna,complete vaccination at least 120 days prior,60.4,51.7,67.5,30,≥ 5 years,infection,30,30
+1108,136,Lin,Moderna,complete vaccination at least 120 days prior,21.8,11.2,31.2,120,≥ 5 years,infection,120,120
+1109,136,Lin,Pfizer,complete vaccination at least 120 days prior,61.3,55.9,66.1,30,≥ 5 years,infection,30,30
+1110,136,Lin,Pfizer,complete vaccination at least 120 days prior,16.4,2.1,28.6,120,≥ 5 years,infection,120,120
+1111,136,Lin,Moderna,complete vaccination at least 120 days prior,55.3,51.7,58.6,30,≥ 5 years,infection,30,30
+1112,136,Lin,Moderna,complete vaccination at least 120 days prior,22.3,19.0,25.4,90,≥ 5 years,infection,90,90
+1113,136,Lin,Pfizer,complete vaccination at least 120 days prior,38.2,29.8,45.5,30,≥ 5 years,infection,30,30
+1114,136,Lin,Pfizer,complete vaccination at least 120 days prior,20.7,13.0,27.8,60,≥ 5 years,infection,60,60
+1115,136,Lin,Moderna,complete vaccination at least 120 days prior,46.4,39.1,52.9,30,≥ 5 years,infection,30,30
+1116,136,Lin,Moderna,complete vaccination at least 120 days prior,4.8,0.0,12.4,60,≥ 5 years,infection,60,60
+1117,136,Lin,Pfizer,complete vaccination at least 120 days prior,60.1,64.3,70.4,30,≥ 5 years,infection,30,30
+1118,136,Lin,Pfizer,complete vaccination at least 120 days prior,53.1,50.2,55.9,60,≥ 5 years,infection,60,60
+1119,136,Lin,Moderna,complete vaccination at least 120 days prior,68.2,62.4,73.1,30,≥ 5 years,infection,30,30
+1120,136,Lin,Moderna,complete vaccination at least 120 days prior,64.1,60.8,67.2,60,≥ 5 years,infection,60,60
+1121,136,Lin,Pfizer,complete vaccination at least 120 days prior,66.8,64.1,69.3,30,≥ 5 years,infection,30,30
+1122,136,Lin,Pfizer,complete vaccination at least 120 days prior,58.3,55.8,60.7,60,≥ 5 years,infection,60,60
+1123,136,Lin,Moderna,complete vaccination at least 120 days prior,61.6,57.4,65.5,30,≥ 5 years,infection,30,30
+1124,136,Lin,Moderna,complete vaccination at least 120 days prior,52.8,48.7,56.6,60,≥ 5 years,infection,60,60
+1125,137,McConeghy,Pfizer,receipt of 3 doses at least 120 days prior,25.8,1.2,44.3,30,nursing home residents,infection,60,0
+1126,137,McConeghy,Pfizer,receipt of 3 doses at least 120 days prior,60.1,-18.8,91.5,30,nursing home residents,severe,60,0
+1127,137,McConeghy,Pfizer,receipt of 3 doses at least 120 days prior,89.6,45.0,100.0,30,nursing home residents,death,60,0
+1128,137,McConeghy,Pfizer,receipt of 3 doses at least 120 days prior,73.9,36.1,92.2,30,nursing home residents,severe,60,0
+1129,138,Tseng,Moderna,unvaccinated individuals,85.8,82.7,88.3,22,general pop,infection,30,14
+1131,138,Tseng,Moderna,complete vaccination with 2 doses,81.0,77.0,54.4,22,general pop,infection,30,14
+1135,138,Tseng,Moderna,unvaccinated individuals,61.0,27.6,79.0,22,general pop,infection,30,14
+1137,138,Tseng,Moderna,complete vaccination with 2 doses,63.6,32.3,80.4,22,general pop,infection,30,14
+1141,138,Tseng,Moderna,unvaccinated individuals,64.3,50.7,74.2,22,general pop,infection,30,14
+1143,138,Tseng,Moderna,complete vaccination with 3 doses,64.3,52.0,73.5,22,general pop,infection,30,14
+1147,138,Tseng,Moderna,unvaccinated individuals,82.7,44.2,94.7,22,general pop,infection,30,14
+1149,138,Tseng,Moderna,complete vaccination with 2 doses,85.2,52.2,95.4,22,general pop,infection,30,14
+1151,138,Tseng,Moderna,unvaccinated individuals,64.4,48.6,75.4,22,general pop,infection,30,14
+1153,138,Tseng,Moderna,complete vaccination with 3 doses,72.1,60.8,80.2,22,general pop,infection,30,14
+1155,138,Tseng,Moderna,unvaccinated individuals,72.6,-54.7,96.6,22,general pop,infection,30,14
+1157,138,Tseng,Moderna,complete vaccination with 2 doses,71.8,-55.7,96.5,22,general pop,infection,30,14
+1159,138,Tseng,Moderna,unvaccinated individuals,75.7,34.7,91.0,22,general pop,infection,30,14
+1161,138,Tseng,Moderna,complete vaccination with 3 doses,80.8,49.6,92.7,22,general pop,infection,30,14
+1163,138,Tseng,Moderna,unvaccinated individuals,90.6,30.6,98.7,22,general pop,infection,30,14
+1165,138,Tseng,Moderna,complete vaccination with 2 doses,91.0,33.6,98.8,22,general pop,infection,30,14
+1167,138,Tseng,Moderna,unvaccinated individuals,30.8,-9.2,56.5,22,general pop,infection,30,14
+1169,138,Tseng,Moderna,complete vaccination with 3 doses,43.2,12.4,63.1,22,general pop,infection,30,14
+1175,139,Risk,Pfizer,unvaccinated individuals,56.3,36.5,70.6,45,12-17 years,infection,90,0
+1200,144,UKHSA,Pfizer,complete vaccination with 3 doses at least 25-39 weeks prior,58.8,54.1,63.0,21,≥ 75 years,severe,28,14
+1202,145,Wan,Pfizer,unvaccinated individuals,-0.1,-2.6,2.3,97,60-79 years,infection,180,14
+1203,145,Wan,Pfizer,unvaccinated individuals,90.4,88.7,91.8,97,60-79 years,severe,180,14
+1204,145,Wan,Pfizer,unvaccinated individuals,89.3,79.1,94.5,97,60-79 years,severe,180,14
+1205,145,Wan,Pfizer,unvaccinated individuals,97.9,95.3,99.1,97,60-79 years,death,180,14
+1206,145,Wan,Pfizer,unvaccinated individuals,73.8,70.6,76.6,97,≥ 80 years,infection,180,14
+1207,145,Wan,Pfizer,unvaccinated individuals,90.5,87.0,93.1,97,≥ 80 years,severe,180,14
+1208,145,Wan,Pfizer,unvaccinated individuals,78.7,40.3,92.4,97,≥ 80 years,severe,180,14
+1209,145,Wan,Pfizer,unvaccinated individuals,96.1,91.2,98.3,97,≥ 80 years,death,180,14
+1210,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,-9.3,-39.0,14.0,97,60-79 years,infection,180,14
+1211,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,81.9,79.7,83.8,97,60-79 years,severe,180,14
+1212,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,85.2,75.8,91.0,97,60-79 years,severe,180,14
+1213,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,96.1,93.5,97.7,97,60-79 years,death,180,14
+1214,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,49.2,45.5,52.6,97,≥ 80 years,infection,180,14
+1215,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,87.3,84.3,89.7,97,≥ 80 years,severe,180,14
+1216,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,88.8,64.4,96.5,97,≥ 80 years,severe,180,14
+1217,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,93.7,89.5,96.2,97,≥ 80 years,death,180,14
+1218,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,49.4,47.8,50.9,97,60-79 years,infection,180,14
+1219,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,94.0,55.5,99.2,97,60-79 years,severe,180,14
+1220,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,62.7,10.1,84.5,97,≥ 80 years,infection,180,14
+1221,145,Wan,CoronaVac (Sinovac),unvaccinated individuals,85.0,-10.9,98.0,97,≥ 80 years,severe,180,14
+1222,145,Wan,Pfizer,unvaccinated individuals,-0.1,-2.6,2.3,97,60-79 years,infection,180,14
+1223,145,Wan,Pfizer,unvaccinated individuals,85.5,82.3,88.2,97,60-79 years,severe,180,14
+1224,145,Wan,Pfizer,unvaccinated individuals,92.2,74.9,97.6,97,60-79 years,severe,180,14
+1225,145,Wan,Pfizer,unvaccinated individuals,97.3,92.1,99.1,97,60-79 years,death,180,14
+1226,145,Wan,Pfizer,unvaccinated individuals,55.8,48.5,62.1,97,≥ 80 years,infection,180,14
+1227,145,Wan,Pfizer,unvaccinated individuals,88.8,82.0,93.0,97,≥ 80 years,severe,180,14
+1228,145,Wan,Pfizer,unvaccinated individuals,94.0,80.7,98.2,97,≥ 80 years,death,180,14
+1237,147,Consonni,Pfizer,unvaccinated individuals,57.0,35.0,71.0,18,HCW,infection,29,7
+1239,147,Consonni,Pfizer,unvaccinated individuals,71.0,23.0,89.0,18,HCW,infection,29,7
+1257,149,Britton,Pfizer,unvaccinated individuals,75.0,71.0,79.0,48,immunocompromised,severe,89,7
+1266,150,Surie,Pfizer,unvaccinated individuals,79.0,74.0,84.0,63,general pop,severe,120,7
+1269,150,Surie,Pfizer,unvaccinated individuals,61.0,29.0,78.0,63,general pop,severe,120,7
+1270,150,Surie,Pfizer,unvaccinated individuals,60.0,12.0,81.0,63,general pop,severe,120,7
+1273,150,Surie,Pfizer,unvaccinated individuals,61.0,37.0,76.0,63,general pop,severe,120,7
+1280,151,Tartof,Pfizer,unvaccinated individuals,72.0,13.0,91.0,120,general pop,severe,150,90
+1290,152,Moghnieh,Pfizer,unvaccinated individuals,57.0,23.2,75.5,33,general pop,infection,60,7
+1291,152,Moghnieh,Pfizer,unvaccinated individuals,53.7,13.3,74.7,33,general pop,infection,60,7
+1292,152,Moghnieh,Pfizer,unvaccinated individuals,90.5,71.6,97.8,33,general pop,infection,60,7
+1293,152,Moghnieh,Pfizer,unvaccinated individuals,63.7,-9.1,91.6,33,general pop,infection,60,7
+1294,152,Moghnieh,Pfizer,unvaccinated individuals,48.6,-92.2,92.1,33,general pop,infection,60,7
+1295,152,Moghnieh,Pfizer,unvaccinated individuals,84.1,19.6,99.1,33,general pop,infection,60,7
+1296,153,Grewal,Pfizer,unvaccinated individuals,96.0,93.0,97.0,149,50-59 years,severe,179,120
+1297,153,Grewal,Pfizer,unvaccinated individuals,98.0,93.0,99.0,209,50-59 years,severe,239,180
+1298,153,Grewal,Pfizer,unvaccinated individuals,97.0,77.0,100.0,33,50-59 years,severe,59,7
+1299,153,Grewal,Pfizer,unvaccinated individuals,95.0,96.0,96.0,89,60-69 years,severe,119,60
+1300,153,Grewal,Pfizer,unvaccinated individuals,90.0,79.0,95.0,209,60-69 years,severe,239,180
+1301,153,Grewal,Pfizer,unvaccinated individuals,96.0,93.0,98.0,33,60-69 years,severe,59,7
+1302,153,Grewal,Pfizer,unvaccinated individuals,95.0,77.0,99.0,89,60-69 years,severe,119,60
+1303,153,Grewal,Pfizer,unvaccinated individuals,96.0,96.0,97.0,33,70-79 years,severe,59,7
+1304,153,Grewal,Pfizer,unvaccinated individuals,91.0,85.0,95.0,209,70-79 years,severe,239,180
+1305,153,Grewal,Pfizer,unvaccinated individuals,96.0,94.0,97.0,33,70-79 years,severe,59,7
+1306,153,Grewal,Pfizer,unvaccinated individuals,93.0,87.0,96.0,89,70-79 years,severe,119,60
+1307,153,Grewal,Pfizer,unvaccinated individuals,92.0,90.0,93.0,33,80+ years,severe,59,7
+1308,153,Grewal,Pfizer,unvaccinated individuals,87.0,80.0,91.0,209,80+ years,severe,239,180
+1309,153,Grewal,Pfizer,unvaccinated individuals,94.0,92.0,95.0,33,80+ years,severe,59,7
+1311,153,Grewal,Pfizer,unvaccinated individuals,77.0,50.0,89.0,149,50-59 years,severe,179,120
+1312,153,Grewal,Pfizer,unvaccinated individuals,75.0,60.0,84.0,209,50-59 years,severe,239,180
+1313,153,Grewal,Pfizer,unvaccinated individuals,95.0,82.0,98.0,33,50-59 years,severe,59,7
+1314,153,Grewal,Pfizer,unvaccinated individuals,94.0,53.0,99.0,89,60-69 years,severe,119,60
+1315,153,Grewal,Pfizer,unvaccinated individuals,69.0,55.0,78.0,209,60-69 years,severe,239,180
+1316,153,Grewal,Pfizer,unvaccinated individuals,88.0,78.0,94.0,33,60-69 years,severe,59,7
+1317,153,Grewal,Pfizer,unvaccinated individuals,81.0,70.0,88.0,89,60-69 years,severe,119,60
+1318,153,Grewal,Pfizer,unvaccinated individuals,86.0,37.0,97.0,33,70-79 years,severe,59,7
+1319,153,Grewal,Pfizer,unvaccinated individuals,59.0,44.0,70.0,209,70-79 years,severe,239,180
+1320,153,Grewal,Pfizer,unvaccinated individuals,85.0,77.0,90.0,33,70-79 years,severe,59,7
+1321,153,Grewal,Pfizer,unvaccinated individuals,86.0,80.0,90.0,89,70-79 years,severe,119,60
+1322,153,Grewal,Pfizer,unvaccinated individuals,76.0,27.0,92.0,33,≥ 80 years,severe,59,7
+1323,153,Grewal,Pfizer,unvaccinated individuals,52.0,36.0,64.0,209,≥ 80 years,severe,239,180
+1324,153,Grewal,Pfizer,unvaccinated individuals,86.0,79.0,90.0,33,≥ 80 years,severe,59,7
+1326,153,Grewal,Pfizer,complete vaccination with 2 doses,79.0,72.0,84.0,33,50-59 years,severe,59,7
+1327,153,Grewal,Pfizer,complete vaccination with 2 doses,57.0,35.0,72.0,89,50-59 years,severe,119,60
+1328,153,Grewal,Pfizer,complete vaccination with 2 doses,89.0,69.0,96.0,33,50-59 years,severe,59,7
+1330,153,Grewal,Pfizer,complete vaccination with 2 doses,87.0,83.0,90.0,33,60-69 years,severe,59,7
+1332,153,Grewal,Pfizer,complete vaccination with 2 doses,83.0,74.0,89.0,33,60-69 years,severe,59,7
+1334,153,Grewal,Pfizer,complete vaccination with 2 doses,83.0,79.0,86.0,33,70-79 years,severe,59,7
+1336,153,Grewal,Pfizer,complete vaccination with 2 doses,80.0,74.0,85.0,33,70-79 years,severe,59,7
+1338,153,Grewal,Pfizer,complete vaccination with 2 doses,77.0,72.0,80.0,33,≥ 80 years,severe,59,7
+1340,153,Grewal,Pfizer,complete vaccination with 2 doses,82.0,78.0,86.0,33,≥ 80 years,severe,59,7
+1346,156,Canetti,Pfizer,complete vaccination with 3 doses at least 4 months prior,52.0,45.0,58.0,21,HCW,infection,35,7
+1347,156,Canetti,Pfizer,complete vaccination with 3 doses at least 4 months prior,-2.0,-27.0,17.0,92,HCW,infection,81,103
+1350,158,Fabiani,Pfizer,complete vaccination with 3 doses at least 4 months prior,28.5,24.7,32.1,21,≥ 80 years,infection,28,14
+1351,158,Fabiani,Pfizer,complete vaccination with 3 doses at least 4 months prior,7.6,-14.1,18.3,42,≥ 80 years,infection,56,28
+1352,158,Fabiani,Pfizer,complete vaccination with 3 doses at least 4 months prior,43.2,30.6,54.9,21,≥ 80 years,severe,28,14
+1353,158,Fabiani,Pfizer,complete vaccination with 3 doses at least 4 months prior,27.2,8.3,42.9,42,≥ 80 years,severe,56,28
+1362,159,Chemaitelly,Pfizer,complete vaccination with 2 doses at least 6 months prior,57.1,55.9,58.3,22,general pop,infection,37,7
+1373,161,Andersson,Pfizer,AZD1222 primary,-7.9,-80.2,64.4,44,general pop,infection,75,14
+1374,161,Andersson,Moderna,AZD1222 primary,51.6,-49.9,100.0,44,general pop,infection,75,14
+1375,161,Andersson,Pfizer,AZD1222 + BNT162b2 (heterologous) primary,16.5,6.9,26.1,44,general pop,infection,75,14
+1376,161,Andersson,Moderna,AZD1222 + mRNA-1273 (heterologous) primary,19.9,7.8,31.9,44,general pop,infection,75,14
+1377,161,Andersson,Moderna,AZD1222 + mRNA-1273 (heterologous) primary,36.0,-141.4,100.0,44,general pop,severe,75,14
+1378,161,Andersson,Moderna,BNT162b2 primary,51.8,18.0,85.6,44,general pop,infection,75,14
+1379,161,Andersson,Pfizer,mRNA-1273 primary,33.2,-6.8,73.2,44,general pop,infection,75,14
+1380,161,Andersson,Pfizer,mRNA-1273 + BNT162b2 primary,-92.2,-458.0,100.0,44,general pop,infection,75,14
+1381,161,Andersson,Pfizer,BNT162b2 primary,0.8,-1.0,2.6,44,general pop,infection,75,14
+1382,161,Andersson,Pfizer,BNT162b2 primary,88.7,84.2,93.2,44,general pop,severe,75,14
+1383,161,Andersson,Pfizer,BNT162b2 primary,64.1,25.2,100.0,44,general pop,severe,75,14
+1384,161,Andersson,Pfizer,BNT162b2 primary,96.8,92.6,100.0,44,general pop,death,75,14
+1385,161,Andersson,Moderna,mRNA-1273 primary,4.2,0.2,8.2,44,general pop,infection,75,14
+1386,161,Andersson,Moderna,mRNA-1273 primary,89.3,80.8,97.9,44,general pop,severe,75,14
+1387,161,Andersson,Moderna,mRNA-1273 primary,99.0,96.9,100.0,44,general pop,death,75,14
+1388,161,Andersson,Pfizer,BNT162b2 primary,13.4,5.5,21.2,44,general pop,infection,75,14
+1389,161,Andersson,Moderna,mRNA-1273 primary,11.2,-4.8,27.3,44,general pop,infection,75,14
+1390,161,Andersson,Pfizer,AZD1222 primary,62.8,52.9,72.7,44,general pop,infection,75,14
+1391,161,Andersson,Pfizer,AZD1222 primary,95.5,88.5,100.0,44,general pop,severe,75,14
+1392,161,Andersson,Moderna,AZD1222 primary,77.7,67.9,87.4,44,general pop,infection,75,14
+1393,161,Andersson,Moderna,AZD1222 primary,73.7,18.8,100.0,44,general pop,death,75,14
+1394,161,Andersson,Pfizer,AZD1222 + BNT162b2 (heterologous) primary,42.7,35.8,49.6,44,general pop,infection,75,14
+1395,161,Andersson,Pfizer,AZD1222 + BNT162b2 (heterologous) primary,86.6,65.1,100.0,44,general pop,severe,75,14
+1396,161,Andersson,Pfizer,AZD1222 + BNT162b2 (heterologous) primary,52.8,-42.8,100.0,44,general pop,severe,75,14
+1397,161,Andersson,Pfizer,AZD1222 + BNT162b2 (heterologous) primary,-11.9,-186.4,100.0,44,general pop,death,75,14
+1398,161,Andersson,Moderna,AZD1222 + mRNA-1273 (heterologous) primary,55.1,42.9,67.2,44,general pop,infection,75,14
+1399,161,Andersson,Moderna,BNT162b2 primary,36.2,21.9,50.4,44,general pop,infection,75,14
+1400,161,Andersson,Moderna,BNT162b2 primary,34.6,-85.8,100.0,44,general pop,severe,75,14
+1401,161,Andersson,Moderna,BNT162b2 primary,41.4,-47.7,100.0,44,general pop,severe,75,14
+1402,161,Andersson,Moderna,BNT162b2 primary,99.3,98.2,100.0,44,general pop,death,75,14
+1403,161,Andersson,Pfizer,mRNA-1273 primary,44.2,34.5,53.8,44,general pop,infection,75,14
+1404,161,Andersson,Moderna,BNT162b2 primary + mRNA-1273,46.0,-29.9,100.0,44,general pop,infection,75,14
+1405,161,Andersson,Pfizer,BNT162b2 primary + mRNA-1273,-17.1,-136.0,100.0,44,general pop,infection,75,14
+1406,161,Andersson,Pfizer,BNT162b2 primary + mRNA-1273,47.8,27.7,68.0,44,general pop,infection,75,14
+1407,161,Andersson,Moderna,BNT162b2 primary + mRNA-1273,32.1,-37.0,100.0,44,general pop,infection,75,14
+1408,161,Andersson,Pfizer,BNT162b2 primary,39.5,37.2,41.8,44,general pop,infection,75,14
+1409,161,Andersson,Pfizer,BNT162b2 primary,77.9,65.2,90.6,44,general pop,severe,75,14
+1410,161,Andersson,Pfizer,BNT162b2 primary,80.9,69.5,92.4,44,general pop,death,75,14
+1411,161,Andersson,Moderna,mRNA-1273 primary,47.9,41.5,54.3,44,general pop,infection,75,14
+1412,161,Andersson,Moderna,mRNA-1273 primary,76.5,36.5,100.0,44,general pop,severe,75,14
+1413,161,Andersson,Moderna,mRNA-1273 primary,87.8,60.7,100.0,44,general pop,death,75,14
+1414,161,Andersson,Pfizer,BNT162b2 primary,38.7,-0.9,78.4,44,general pop,infection,75,14
+1415,161,Andersson,Moderna,mRNA-1273 primary,64.4,9.6,100.0,44,general pop,infection,75,14
+1416,161,Andersson,Pfizer,AZD1222 primary,-8.6,-79.8,62.6,44,general pop,infection,75,14
+1417,161,Andersson,Moderna,AZD1222 primary,-66.6,-240.0,100.0,44,general pop,infection,75,14
+1418,161,Andersson,Pfizer,AZD1222 + BNT162b2 (heterologous) primary,60.9,57.8,64.1,44,general pop,infection,75,14
+1419,161,Andersson,Moderna,AZD1222 + mRNA-1273 (heterologous) primary,50.1,19.1,81.0,44,general pop,infection,75,14
+1420,161,Andersson,Moderna,BNT162b2 primary,67.8,66.3,69.2,44,general pop,infection,75,14
+1421,161,Andersson,Moderna,BNT162b2 primary,94.6,90.0,99.3,44,general pop,severe,75,14
+1422,161,Andersson,Pfizer,mRNA-1273 primary,62.3,59.5,65.0,44,general pop,infection,75,14
+1423,161,Andersson,Pfizer,mRNA-1273 primary,88.5,70.8,100.0,44,general pop,severe,75,14
+1424,161,Andersson,Moderna,mRNA-1273 + BNT162b2 primary,69.7,47.4,92.0,44,general pop,infection,75,14
+1425,161,Andersson,Moderna,mRNA-1273 + BNT162b2 primary,95.5,86.1,100.0,44,general pop,severe,75,14
+1426,161,Andersson,Moderna,mRNA-1273 + BNT162b2 primary,75.5,16.8,100.0,44,general pop,severe,75,14
+1427,161,Andersson,Pfizer,mRNA-1273 + BNT162b2 primary,66.7,56.0,77.4,44,general pop,infection,75,14
+1428,161,Andersson,Pfizer,mRNA-1273 + BNT162b2 primary,65.1,48.7,81.5,44,general pop,infection,75,14
+1429,161,Andersson,Moderna,mRNA-1273 + BNT162b2 primary,69.8,56.1,83.5,44,general pop,infection,75,14
+1430,161,Andersson,Pfizer,BNT162b2 primary,69.8,69.2,70.5,44,general pop,infection,75,14
+1431,161,Andersson,Pfizer,BNT162b2 primary,80.1,70.8,89.3,44,general pop,severe,75,14
+1432,161,Andersson,Pfizer,BNT162b2 primary,83.7,79.0,88.4,44,general pop,severe,75,14
+1433,161,Andersson,Moderna,mRNA-1273 primary,65.1,62.8,67.4,44,general pop,infection,75,14
+1434,161,Andersson,Moderna,mRNA-1273 primary,94.4,85.5,100.0,44,general pop,severe,75,14
+1435,161,Andersson,Moderna,mRNA-1273 primary,94.0,80.2,100.0,44,general pop,severe,75,14
+1436,161,Andersson,Pfizer,BNT162b2 primary,59.7,41.9,77.5,44,general pop,infection,75,14
+1437,161,Andersson,Moderna,mRNA-1273 primary,53.9,17.6,90.3,44,general pop,infection,75,14
+1438,161,Andersson,Pfizer,AZD1222 primary,26.3,20.2,32.5,44,general pop,infection,75,14
+1439,161,Andersson,Pfizer,AZD1222 primary,87.8,80.9,94.7,44,general pop,severe,75,14
+1440,161,Andersson,Moderna,AZD1222 primary,38.8,34.2,43.3,44,general pop,infection,75,14
+1441,161,Andersson,Moderna,AZD1222 primary,95.2,90.2,100.0,44,general pop,severe,75,14
+1442,161,Andersson,Pfizer,AZD1222 + BNT162b2 primary,9.7,4.1,15.3,44,general pop,infection,75,14
+1443,161,Andersson,Pfizer,AZD1222 + BNT162b2 primary,63.2,12.1,100.0,44,general pop,severe,75,14
+1444,161,Andersson,Moderna,AZD1222 + mRNA-1273 primary,8.1,-13.3,29.4,44,general pop,infection,75,14
+1445,161,Andersson,Moderna,BNT162b2 primary,37.4,34.7,40.2,44,general pop,infection,75,14
+1446,161,Andersson,Moderna,BNT162b2 primary,88.7,83.6,93.8,44,general pop,infection,75,14
+1447,161,Andersson,Pfizer,mRNA-1273 primary,20.2,14.3,26.1,44,general pop,infection,75,14
+1448,161,Andersson,Pfizer,mRNA-1273 primary,89.6,79.7,99.6,44,general pop,severe,75,14
+1449,161,Andersson,Moderna,mRNA-1273 + BNT162b2 primary,64.3,14.1,100.0,44,general pop,infection,75,14
+1450,161,Andersson,Pfizer,mRNA-1273 + BNT162b2 primary,49.1,-29.0,100.0,44,general pop,infection,75,14
+1451,161,Andersson,Pfizer,mRNA-1273 + BNT162b2 primary,55.4,-14.1,100.0,44,general pop,infection,75,14
+1452,161,Andersson,Pfizer,BNT162b2 primary,23.0,21.3,24.8,44,general pop,infection,75,14
+1453,161,Andersson,Pfizer,BNT162b2 primary,83.7,79.0,88.4,44,general pop,severe,75,14
+1454,161,Andersson,Moderna,mRNA-1273 primary,31.0,25.5,36.6,44,general pop,infection,75,14
+1455,161,Andersson,Moderna,mRNA-1273 primary,76.3,59.5,93.1,44,general pop,severe,75,14
+1456,161,Andersson,Pfizer,BNT162b2 primary,29.1,23.6,34.6,44,general pop,infection,75,14
+1457,161,Andersson,Moderna,mRNA-1273 primary,38.7,19.7,57.6,44,general pop,infection,75,14
+1469,164,Fu,Pfizer,unvaccinated individuals,-22.0,-24.9,-19.1,30,general pop,infection,30,30
+1470,164,Fu,Pfizer,unvaccinated individuals,45.7,40.3,50.6,240,general pop,infection,240,240
+1471,164,Fu,Moderna,unvaccinated individuals,-44.1,-56.4,-32.7,30,general pop,infection,30,30
+1472,164,Fu,Moderna,unvaccinated individuals,89.7,72.5,96.1,240,general pop,infection,240,240
+1473,164,Fu,Moderna,unvaccinated individuals,-15.2,-18.5,-11.9,30,general pop,infection,30,30
+1474,164,Fu,Moderna,unvaccinated individuals,76.5,70.9,81.1,240,general pop,infection,240,240
+1475,164,Fu,Pfizer,unvaccinated individuals,-64.8,-76.5,-53.9,30,general pop,infection,30,30
+1476,164,Fu,Pfizer,unvaccinated individuals,83.9,66.2,92.3,240,general pop,infection,240,240
+1490,170,Mimura,Pfizer,complete vaccination with 2 doses (14 days post dose 2 to 13 days post dose 3),63.6,56.4,69.5,17,≥16 years,infection,21,14
+1492,170,Mimura,Pfizer,complete vaccination with 2 doses (14 days post dose 2 to 13 days post dose 3),66.5,58.7,72.8,17,≥16 years,symptomatic,21,14
+1494,170,Mimura,Pfizer,complete vaccination with 2 doses (14 days post dose 2 to 13 days post dose 3),52.9,41.1,62.3,17,≥16 years,infection,21,14
+1496,170,Mimura,Pfizer,complete vaccination with 2 doses (14 days post dose 2 to 13 days post dose 3),59.6,47.9,68.6,17,≥16 years,symptomatic,21,14
+1498,171,Nittayasoot,Pfizer,unvaccinated individuals,99.0,92.6,99.8,51,general pop,severe,89,14
+1507,172,Carazo,Pfizer,unvaccinated individuals,93.0,92.0,94.0,48,≥ 60 years,severe,90,7
+1508,172,Carazo,Pfizer,unvaccinated individuals,87.0,84.0,89.0,135,≥ 60 years,severe,179,91
+1511,172,Carazo,Pfizer,unvaccinated individuals,96.0,92.0,98.0,48,≥ 60 years,severe,90,7
+1514,172,Carazo,Pfizer,unvaccinated individuals,85.0,81.0,88.0,48,≥ 60 years,severe,90,7
+1515,172,Carazo,Pfizer,unvaccinated individuals,66.0,48.0,78.0,224,≥ 60 years,severe,269,180
+1518,172,Carazo,Pfizer,unvaccinated individuals,82.0,78.0,86.0,48,≥ 60 years,severe,90,7
+1519,172,Carazo,Pfizer,unvaccinated individuals,85.0,69.0,93.0,135,≥ 60 years,severe,179,91
+1522,172,Carazo,Pfizer,unvaccinated individuals,82.0,68.0,90.0,48,≥ 60 years,severe,90,7
+1523,172,Carazo,Pfizer,unvaccinated individuals,56.0,45.0,66.0,314,≥ 60 years,severe,359,270
+1526,172,Carazo,Pfizer,unvaccinated individuals,80.0,76.0,83.0,48,≥ 60 years,severe,90,7
+1527,172,Carazo,Pfizer,unvaccinated individuals,75.0,-9.0,94.0,314,≥ 60 years,severe,359,270
+1530,172,Carazo,Pfizer,unvaccinated individuals,73.0,67.0,78.0,48,≥ 60 years,severe,90,7
+1531,172,Carazo,Pfizer,unvaccinated individuals,57.0,11.0,79.0,135,≥ 60 years,severe,179,91
+1559,177,Tamandiou,Pfizer,complete vaccination with primary series plus any mRNA booster dose received 6-7 months prior,39.3,37.8,40.7,18,≥ 60 years,symptomatic,30,7
+1560,177,Tamandiou,Pfizer,complete vaccination with primary series plus any mRNA booster dose received 6-7 months prior,-32.6,-39.1,26.4,195,≥ 60 years,symptomatic,210,180
+1589,182,Lin,Pfizer,complete vaccination with 2 doses of BNT162b2 or mRNA-1273,24.4,14.4,33.2,1,5-11 years,infection,1,1
+1590,182,Lin,Pfizer,complete vaccination with 2 doses of BNT162b2 or mRNA-1273,19.3,6.9,30.0,5,5-11 years,infection,5,5
+1591,182,Lin,Pfizer bivalent,complete vaccination with 2 doses of BNT162b2 or mRNA-1273,76.7,45.7,90.0,1,5-11 years,infection,1,1
+1592,182,Lin,Pfizer bivalent,complete vaccination with 2 doses of BNT162b2 or mRNA-1273,47.3,-17.9,76.4,2,5-11 years,infection,2,2
+1594,183,Link-Gelles,Pfizer bivalent,vaccination with 2 or 3 doses of monovalent mRNA vaccine,51.0,43.0,58.0,36,general pop,symptomatic,59,14
+1595,183,Link-Gelles,Pfizer bivalent,vaccination with 2 or 3 doses of monovalent mRNA vaccine,52.0,48.0,56.0,89,general pop,symptomatic,119,60
+1597,183,Link-Gelles,Pfizer bivalent,vaccination with 2 or 3 doses of monovalent mRNA vaccine,50.0,36.0,61.0,36,general pop,symptomatic,59,14
+1598,183,Link-Gelles,Pfizer bivalent,vaccination with 2 or 3 doses of monovalent mRNA vaccine,48.0,39.0,55.0,89,general pop,symptomatic,119,60
+1600,183,Link-Gelles,Pfizer bivalent,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",54.0,43.0,63.0,36,50-64 years,symptomatic,59,14
+1601,183,Link-Gelles,Pfizer bivalent,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",39.0,30.0,46.0,89,50-64 years,symptomatic,119,60
+1603,183,Link-Gelles,Pfizer bivalent,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",55.0,42.0,65.0,36,≥ 65 years,symptomatic,59,14
+1604,183,Link-Gelles,Pfizer bivalent,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",32.0,21.0,40.0,89,≥ 65 years,symptomatic,119,60
+1606,183,Link-Gelles,Pfizer bivalent,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",45.0,25.0,60.0,36,50-64 years,symptomatic,59,14
+1607,183,Link-Gelles,Pfizer bivalent,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",38.0,24.0,50.0,89,50-64 years,symptomatic,119,60
+1609,183,Link-Gelles,Pfizer bivalent,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",50.0,24.0,68.0,36,≥ 65 years,symptomatic,59,14
+1610,183,Link-Gelles,Pfizer bivalent,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",42.0,26.0,54.0,89,≥ 65 years,symptomatic,119,60
+1611,184,Lin,Pfizer,complete primary vaccination,15.8,-39.5,49.1,57,≥ 12 years,severe,99,15
+1612,184,Lin,Pfizer,complete primary vaccination,4.2,-50.1,38.8,57,≥ 12 years,severe,99,15
+1613,184,Lin,Pfizer,complete primary + first booster vaccination (3 doses),28.0,-3.2,49.8,57,≥ 12 years,severe,99,15
+1614,184,Lin,Pfizer,complete primary + first booster vaccination (3 doses),32.2,4.5,51.8,57,≥ 12 years,severe,99,15
+1615,184,Lin,Pfizer bivalent,complete primary vaccination,54.0,-6.3,80.1,57,≥ 12 years,severe,99,15
+1616,184,Lin,Pfizer bivalent,complete primary vaccination,54.0,-0.3,78.9,57,≥ 12 years,severe,99,15
+1617,184,Lin,Pfizer bivalent,complete primary + first booster vaccination (3 doses),61.9,43.6,74.3,57,≥ 12 years,severe,99,15
+1618,184,Lin,Pfizer bivalent,complete primary + first booster vaccination (3 doses),64.0,47.0,75.5,57,≥ 12 years,severe,99,15
+1619,184,Lin,Pfizer bivalent,complete primary + first and second booster vaccination (4 doses),55.7,12.0,77.7,57,≥ 12 years,severe,99,15
+1620,184,Lin,Pfizer bivalent,complete primary + first and second booster vaccination (4 doses),63.1,27.3,81.2,57,≥ 12 years,severe,99,15
+1622,186,Niesen,Pfizer,complete vaccination with 2 doses of any mRNA,89.6,86.9,91.7,3267,general pop,symptomatic,3392,3142
+1623,186,Niesen,Moderna,complete vaccination with 2 doses of any mRNA,89.1,82.9,93.0,3267,general pop,symptomatic,3392,3142
+1693,42,Monge,Moderna,complete vaccination with 2 doses (or 1 dose for Ad26.COV2.S) ≥3 months prior,49.7,48.3,51.1,20,≥ 40 years,infection,34,7
+1694,42,Monge,Moderna,complete vaccination with 2 doses (or 1 dose for Ad26.COV2.S) ≥3 months prior,55.3,52.3,58.2,20,≥ 40 years,infection,34,7
+1695,42,Monge,Moderna,complete vaccination with 2 doses (or 1 dose for Ad26.COV2.S) ≥3 months prior,58.6,55.5,61.6,20,≥ 40 years,infection,34,7
+1696,42,Monge,Moderna,complete vaccination with 2 doses (or 1 dose for Ad26.COV2.S) ≥3 months prior,48.0,42.5,53.7,20,≥ 40 years,infection,34,7
+1706,56,Wang,Moderna,unvaccinated individuals,65.0,63.0,66.0,96,general pop,infection,179,14
+1708,56,Wang,Moderna,unvaccinated individuals,91.0,90.0,92.0,96,general pop,infection,179,14
+1742,74,Gram,Moderna,unvaccinated individuals,55.2,54.7,55.6,22,12-59 years,infection,30,14
+1744,74,Gram,Moderna,unvaccinated individuals,89.8,87.9,91.3,22,12-59 years,severe,30,14
+1746,74,Gram,Moderna,unvaccinated individuals,89.5,87.7,91.0,22,12-59 years,infection,30,14
+1747,74,Gram,Moderna,unvaccinated individuals,83.5,69.4,91.1,75,12-59 years,infection,90,61
+1748,74,Gram,Moderna,unvaccinated individuals,94.8,85.9,98.1,22,12-59 years,severe,30,14
+1749,74,Gram,Moderna,unvaccinated individuals,68.4,41.4,83.0,45,12-59 years,severe,60,31
+1750,74,Gram,Moderna,unvaccinated individuals,57.6,55.8,59.4,22,≥ 60 years,infection,30,14
+1752,74,Gram,Moderna,unvaccinated individuals,94.4,93.0,95.5,22,≥ 60 years,severe,30,14
+1754,74,Gram,Moderna,unvaccinated individuals,86.0,83.3,88.3,22,≥ 60 years,infection,30,14
+1755,74,Gram,Moderna,unvaccinated individuals,81.2,72.9,87.0,75,≥ 60 years,infection,90,61
+1756,74,Gram,Moderna,unvaccinated individuals,96.6,93.9,98.1,45,≥ 60 years,severe,60,31
+1757,74,Gram,Moderna,unvaccinated individuals,91.4,79.8,96.4,105,≥ 60 years,severe,120,91
+1758,75,Lind,Moderna,complete vaccination with 2 doses ≥5 months prior,55.0,48.0,61.0,36,general pop,infection,59,14
+1768,78,Castillo,Moderna,unvaccinated individuals,64.0,63.0,64.0,11,general pop,symptomatic,14,8
+1770,78,Castillo,Moderna,unvaccinated individuals,90.0,87.0,92.0,11,general pop,severe,14,8
+1772,78,Castillo,Moderna,unvaccinated individuals,96.0,92.0,99.0,11,general pop,severe,14,8
+1774,78,Castillo,Moderna,unvaccinated individuals,95.0,89.0,100.0,11,general pop,death,14,8
+1776,78,Castillo,Moderna,unvaccinated individuals,84.0,79.0,88.0,11,general pop,symptomatic,14,8
+1778,78,Castillo,Moderna,unvaccinated individuals,98.0,98.0,99.0,11,general pop,severe,14,8
+1780,78,Castillo,Moderna,unvaccinated individuals,99.0,98.0,99.0,11,general pop,severe,14,8
+1782,78,Castillo,Moderna,unvaccinated individuals,98.0,96.0,100.0,11,general pop,death,14,8
+1794,86,Fano,Moderna,unvaccinated individuals,69.1,67.5,70.7,17,general pop,infection,19,15
+1796,86,Fano,Moderna,unvaccinated individuals,28.0,0.0,48.5,12,general pop,infection,14,10
+1827,99,Breznik,Moderna,complete vaccination with 3 doses,81.0,70.0,88.0,90,nursing and retirement home residents,infection,120,60
+1828,104,Link-Gelles,Moderna,unvaccinated individuals,84.0,83.0,85.0,63,general pop,symptomatic,119,7
+1830,104,Link-Gelles,Moderna,unvaccinated individuals,92.0,91.0,93.0,63,general pop,severe,119,7
+1832,104,Link-Gelles,Moderna,unvaccinated individuals,56.0,51.0,61.0,63,general pop,symptomatic,119,7
+1834,104,Link-Gelles,Moderna,unvaccinated individuals,69.0,58.0,76.0,63,general pop,severe,119,7
+1840,110,Stirrup,Moderna,complete vaccination with 2 doses at least 84 days prior,72.0,67.0,76.0,31,LTCF staff,infection,48,14
+1842,110,Stirrup,Moderna,complete vaccination with 2 doses at least 84 days prior,63.0,54.0,70.0,31,LTCF staff,infection,48,14
+1844,110,Stirrup,Moderna,complete vaccination with 2 doses at least 84 days prior,80.0,67.0,88.0,31,LTCF staff,infection,48,14
+1846,110,Stirrup,Moderna,complete vaccination with 2 doses at least 84 days prior,75.0,52.0,87.0,31,LTCF staff,infection,48,14
+1851,115,Powell,Moderna,unvaccinated individuals,62.9,60.5,65.1,59,11-17 years,symptomatic,104,14
+1852,115,Powell,Moderna,unvaccinated individuals,33.6,14.6,48.3,139,11-17 years,symptomatic,174,105
+1853,115,Powell,Moderna,unvaccinated individuals,96.0,92.2,97.9,59,11-17 years,symptomatic,104,14
+1857,126,Tan,Moderna,complete vaccination with 3 doses of BNT162b2 (Pfizer) or mRNA-1273 (Moderna) ≥5 months prior,35.0,31.0,40.0,19,80+ years,symptomatic,30,8
+1860,126,Tan,Moderna,complete vaccination with 3 doses of BNT162b2 (Pfizer) or mRNA-1273 (Moderna) ≥5 months prior,58.0,50.0,64.0,19,80+ years,severe,30,8
+1863,126,Tan,Moderna,complete vaccination with 3 doses of BNT162b2 (Pfizer) or mRNA-1273 (Moderna) ≥5 months prior,58.0,42.0,69.0,19,80+ years,severe,30,8
+1866,129,Schrag,Moderna,unvaccinated individuals,79.0,59.0,89.0,63,pregnant persons,symptomatic,119,7
+1869,129,Schrag,Moderna,unvaccinated individuals,86.0,28.0,97.0,63,pregnant persons,severe,119,7
+1901,134,Link-Gelles,Moderna,complete vaccination at least 150 days prior,46.0,39.0,58.0,63,general pop,symptomatic,119,7
+1902,134,Link-Gelles,Moderna,complete vaccination at least 150 days prior,57.0,35.0,72.0,63,general pop,severe,119,7
+1921,137,McConeghy,Moderna,receipt of 3 doses at least 120 days prior,25.8,1.2,44.3,30,nursing home residents,infection,60,0
+1922,137,McConeghy,Moderna,receipt of 3 doses at least 120 days prior,60.1,-18.8,91.5,30,nursing home residents,severe,60,0
+1923,137,McConeghy,Moderna,receipt of 3 doses at least 120 days prior,89.6,45.0,100.0,30,nursing home residents,death,60,0
+1924,137,McConeghy,Moderna,receipt of 3 doses at least 120 days prior,73.9,36.1,92.2,30,nursing home residents,severe,60,0
+1941,144,UKHSA,Moderna,complete vaccination with 3 doses at least 25-39 weeks prior,58.8,54.1,63.0,21,≥ 75 years,severe,28,14
+1943,149,Britton,Moderna,unvaccinated individuals,75.0,71.0,79.0,48,immunocompromised,severe,89,7
+1952,150,Surie,Moderna,unvaccinated individuals,79.0,74.0,84.0,63,general pop,severe,120,7
+1955,150,Surie,Moderna,unvaccinated individuals,61.0,29.0,78.0,63,general pop,severe,120,7
+1956,150,Surie,Moderna,unvaccinated individuals,60.0,12.0,81.0,63,general pop,severe,120,7
+1959,150,Surie,Moderna,unvaccinated individuals,61.0,37.0,76.0,63,general pop,severe,120,7
+1960,153,Grewal,Moderna,unvaccinated individuals,96.0,93.0,97.0,149,50-59 years,severe,179,120
+1961,153,Grewal,Moderna,unvaccinated individuals,98.0,93.0,99.0,209,50-59 years,severe,239,180
+1962,153,Grewal,Moderna,unvaccinated individuals,97.0,77.0,100.0,33,50-59 years,severe,59,7
+1963,153,Grewal,Moderna,unvaccinated individuals,95.0,96.0,96.0,89,60-69 years,severe,119,60
+1964,153,Grewal,Moderna,unvaccinated individuals,90.0,79.0,95.0,209,60-69 years,severe,239,180
+1965,153,Grewal,Moderna,unvaccinated individuals,96.0,93.0,98.0,33,60-69 years,severe,59,7
+1966,153,Grewal,Moderna,unvaccinated individuals,95.0,77.0,99.0,89,60-69 years,severe,119,60
+1967,153,Grewal,Moderna,unvaccinated individuals,96.0,96.0,97.0,33,70-79 years,severe,59,7
+1968,153,Grewal,Moderna,unvaccinated individuals,91.0,85.0,95.0,209,70-79 years,severe,239,180
+1969,153,Grewal,Moderna,unvaccinated individuals,96.0,94.0,97.0,33,70-79 years,severe,59,7
+1970,153,Grewal,Moderna,unvaccinated individuals,93.0,87.0,96.0,89,70-79 years,severe,119,60
+1971,153,Grewal,Moderna,unvaccinated individuals,92.0,90.0,93.0,33,80+ years,severe,59,7
+1972,153,Grewal,Moderna,unvaccinated individuals,87.0,80.0,91.0,209,80+ years,severe,239,180
+1973,153,Grewal,Moderna,unvaccinated individuals,94.0,92.0,95.0,33,80+ years,severe,59,7
+1975,153,Grewal,Moderna,unvaccinated individuals,77.0,50.0,89.0,149,50-59 years,severe,179,120
+1976,153,Grewal,Moderna,unvaccinated individuals,75.0,60.0,84.0,209,50-59 years,severe,239,180
+1977,153,Grewal,Moderna,unvaccinated individuals,95.0,82.0,98.0,33,50-59 years,severe,59,7
+1978,153,Grewal,Moderna,unvaccinated individuals,94.0,53.0,99.0,89,60-69 years,severe,119,60
+1979,153,Grewal,Moderna,unvaccinated individuals,69.0,55.0,78.0,209,60-69 years,severe,239,180
+1980,153,Grewal,Moderna,unvaccinated individuals,88.0,78.0,94.0,33,60-69 years,severe,59,7
+1981,153,Grewal,Moderna,unvaccinated individuals,81.0,70.0,88.0,89,60-69 years,severe,119,60
+1982,153,Grewal,Moderna,unvaccinated individuals,86.0,37.0,97.0,33,70-79 years,severe,59,7
+1983,153,Grewal,Moderna,unvaccinated individuals,59.0,44.0,70.0,209,70-79 years,severe,239,180
+1984,153,Grewal,Moderna,unvaccinated individuals,85.0,77.0,90.0,33,70-79 years,severe,59,7
+1985,153,Grewal,Moderna,unvaccinated individuals,86.0,80.0,90.0,89,70-79 years,severe,119,60
+1986,153,Grewal,Moderna,unvaccinated individuals,76.0,27.0,92.0,33,≥ 80 years,severe,59,7
+1987,153,Grewal,Moderna,unvaccinated individuals,52.0,36.0,64.0,209,≥ 80 years,severe,239,180
+1988,153,Grewal,Moderna,unvaccinated individuals,86.0,79.0,90.0,33,≥ 80 years,severe,59,7
+1990,153,Grewal,Moderna,complete vaccination with 2 doses,79.0,72.0,84.0,33,50-59 years,severe,59,7
+1991,153,Grewal,Moderna,complete vaccination with 2 doses,57.0,35.0,72.0,89,50-59 years,severe,119,60
+1992,153,Grewal,Moderna,complete vaccination with 2 doses,89.0,69.0,96.0,33,50-59 years,severe,59,7
+1994,153,Grewal,Moderna,complete vaccination with 2 doses,87.0,83.0,90.0,33,60-69 years,severe,59,7
+1996,153,Grewal,Moderna,complete vaccination with 2 doses,83.0,74.0,89.0,33,60-69 years,severe,59,7
+1998,153,Grewal,Moderna,complete vaccination with 2 doses,83.0,79.0,86.0,33,70-79 years,severe,59,7
+2000,153,Grewal,Moderna,complete vaccination with 2 doses,80.0,74.0,85.0,33,70-79 years,severe,59,7
+2002,153,Grewal,Moderna,complete vaccination with 2 doses,77.0,72.0,80.0,33,≥ 80 years,severe,59,7
+2004,153,Grewal,Moderna,complete vaccination with 2 doses,82.0,78.0,86.0,33,≥ 80 years,severe,59,7
+2010,158,Fabiani,Moderna,complete vaccination with 3 doses at least 4 months prior,28.5,24.7,32.1,21,≥ 80 years,infection,28,14
+2011,158,Fabiani,Moderna,complete vaccination with 3 doses at least 4 months prior,7.6,-14.1,18.3,42,≥ 80 years,infection,56,28
+2012,158,Fabiani,Moderna,complete vaccination with 3 doses at least 4 months prior,43.2,30.6,54.9,21,≥ 80 years,severe,28,14
+2013,158,Fabiani,Moderna,complete vaccination with 3 doses at least 4 months prior,27.2,8.3,42.9,42,≥ 80 years,severe,56,28
+2015,159,Chemaitelly,Moderna,complete vaccination with 2 doses at least 6 months prior,57.1,55.9,58.3,22,general pop,infection,37,7
+2033,171,Nittayasoot,Moderna,unvaccinated individuals,99.0,92.6,99.8,51,general pop,severe,89,14
+2037,172,Carazo,Moderna,unvaccinated individuals,96.0,92.0,98.0,48,≥ 60 years,severe,90,7
+2040,172,Carazo,Moderna,unvaccinated individuals,82.0,78.0,86.0,48,≥ 60 years,severe,90,7
+2041,172,Carazo,Moderna,unvaccinated individuals,85.0,69.0,93.0,135,≥ 60 years,severe,179,91
+2044,172,Carazo,Moderna,unvaccinated individuals,80.0,76.0,83.0,48,≥ 60 years,severe,90,7
+2045,172,Carazo,Moderna,unvaccinated individuals,75.0,-9.0,94.0,314,≥ 60 years,severe,359,270
+2048,172,Carazo,Moderna,unvaccinated individuals,73.0,67.0,78.0,48,≥ 60 years,severe,90,7
+2049,172,Carazo,Moderna,unvaccinated individuals,57.0,11.0,79.0,135,≥ 60 years,severe,179,91
+2077,177,Tamandiou,Moderna,complete vaccination with primary series plus any mRNA booster dose received 6-7 months prior,39.3,37.8,40.7,18,≥ 60 years,symptomatic,30,7
+2078,177,Tamandiou,Moderna,complete vaccination with primary series plus any mRNA booster dose received 6-7 months prior,-32.6,-39.1,26.4,195,≥ 60 years,symptomatic,210,180
+2106,182,Lin,Moderna,complete vaccination with 2 doses of BNT162b2 or mRNA-1273,24.4,14.4,33.2,1,5-11 years,infection,1,1
+2107,182,Lin,Moderna,complete vaccination with 2 doses of BNT162b2 or mRNA-1273,19.3,6.9,30.0,5,5-11 years,infection,5,5
+2108,182,Lin,Moderna,complete vaccination with 2 doses of BNT162b2 or mRNA-1273,76.7,45.7,90.0,1,5-11 years,infection,1,1
+2109,182,Lin,Moderna,complete vaccination with 2 doses of BNT162b2 or mRNA-1273,47.3,-17.9,76.4,2,5-11 years,infection,2,2
+2111,183,Link-Gelles,Moderna,vaccination with 2 or 3 doses of monovalent mRNA vaccine,51.0,43.0,58.0,36,general pop,symptomatic,59,14
+2112,183,Link-Gelles,Moderna,vaccination with 2 or 3 doses of monovalent mRNA vaccine,52.0,48.0,56.0,89,general pop,symptomatic,119,60
+2114,183,Link-Gelles,Moderna,vaccination with 2 or 3 doses of monovalent mRNA vaccine,50.0,36.0,61.0,36,general pop,symptomatic,59,14
+2115,183,Link-Gelles,Moderna,vaccination with 2 or 3 doses of monovalent mRNA vaccine,48.0,39.0,55.0,89,general pop,symptomatic,119,60
+2117,183,Link-Gelles,Moderna,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",54.0,43.0,63.0,36,50-64 years,symptomatic,59,14
+2118,183,Link-Gelles,Moderna,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",39.0,30.0,46.0,89,50-64 years,symptomatic,119,60
+2120,183,Link-Gelles,Moderna,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",55.0,42.0,65.0,36,≥ 65 years,symptomatic,59,14
+2121,183,Link-Gelles,Moderna,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",32.0,21.0,40.0,89,≥ 65 years,symptomatic,119,60
+2123,183,Link-Gelles,Moderna,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",45.0,25.0,60.0,36,50-64 years,symptomatic,59,14
+2124,183,Link-Gelles,Moderna,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",38.0,24.0,50.0,89,50-64 years,symptomatic,119,60
+2126,183,Link-Gelles,Moderna,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",50.0,24.0,68.0,36,≥ 65 years,symptomatic,59,14
+2127,183,Link-Gelles,Moderna,"vaccination with 2, 3, or 4 doses of monovalent mRNA vaccine",42.0,26.0,54.0,89,≥ 65 years,symptomatic,119,60
+2128,184,Lin,Moderna,complete primary vaccination,15.8,-39.5,49.1,57,≥ 12 years,severe,99,15
+2129,184,Lin,Moderna,complete primary vaccination,4.2,-50.1,38.8,57,≥ 12 years,severe,99,15
+2130,184,Lin,Moderna,complete primary + first booster vaccination (3 doses),28.0,-3.2,49.8,57,≥ 12 years,severe,99,15
+2131,184,Lin,Moderna,complete primary + first booster vaccination (3 doses),32.2,4.5,51.8,57,≥ 12 years,severe,99,15
+2132,184,Lin,Moderna,complete primary vaccination,54.0,-6.3,80.1,57,≥ 12 years,severe,99,15
+2133,184,Lin,Moderna,complete primary vaccination,54.0,-0.3,78.9,57,≥ 12 years,severe,99,15
+2134,184,Lin,Moderna,complete primary + first booster vaccination (3 doses),61.9,43.6,74.3,57,≥ 12 years,severe,99,15
+2135,184,Lin,Moderna,complete primary + first booster vaccination (3 doses),64.0,47.0,75.5,57,≥ 12 years,severe,99,15
+2136,184,Lin,Moderna,complete primary + first and second booster vaccination (4 doses),55.7,12.0,77.7,57,≥ 12 years,severe,99,15
+2137,184,Lin,Moderna,complete primary + first and second booster vaccination (4 doses),63.1,27.3,81.2,57,≥ 12 years,severe,99,15
