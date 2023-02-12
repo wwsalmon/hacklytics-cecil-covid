@@ -430,5 +430,101 @@
     "UCL": 84.4,
     "vaccine": "J&J 1st dose",
     "outcome_category": "death"
+  },
+  {
+    "days": 22,
+    "VE": 85.8,
+    "LCL": 82.7,
+    "UCL": 88.3,
+    "vaccine": "First booster",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 60,
+    "VE": 76.3,
+    "LCL": 73.9,
+    "UCL": 78.6,
+    "vaccine": "First booster",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 120.5,
+    "VE": 67.3,
+    "LCL": 62,
+    "UCL": 71.9,
+    "vaccine": "First booster",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 150,
+    "VE": 54.9,
+    "LCL": 35.6,
+    "UCL": 68.4,
+    "vaccine": "First booster",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 22,
+    "VE": 64.3,
+    "LCL": 50.7,
+    "UCL": 74.2,
+    "vaccine": "Second booster",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 60,
+    "VE": 51.1,
+    "LCL": 35.5,
+    "UCL": 63,
+    "vaccine": "Second booster",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 90,
+    "VE": 17.3,
+    "LCL": -45.3,
+    "UCL": 62.6,
+    "vaccine": "Second booster",
+    "outcome_category": "infection"
+  },
+  {
+    "days": 60,
+    "VE": 89,
+    "LCL": 88,
+    "UCL": 90,
+    "vaccine": "First booster",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 90,
+    "VE": 86,
+    "LCL": 85,
+    "UCL": 87,
+    "vaccine": "First booster",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 150,
+    "VE": 66,
+    "LCL": 63,
+    "UCL": 68,
+    "vaccine": "First booster",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 210,
+    "VE": 41,
+    "LCL": 35,
+    "UCL": 47,
+    "vaccine": "First booster",
+    "outcome_category": "severe"
+  },
+  {
+    "days": 240,
+    "VE": 31,
+    "LCL": 17,
+    "UCL": 43,
+    "vaccine": "First booster",
+    "outcome_category": "severe"
   }
 ]
