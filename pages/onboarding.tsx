@@ -41,13 +41,17 @@ export default function Onboarding({thisUser}: {thisUser: HydratedDocument<IUser
             vaxId: (stage === 1 ? (brand + " " + (brand === "J&J" ? "1st dose" : "1st and 2nd doses")) : stage === 2 ? "First booster" : "Second booster"),
             date: date,
         }).then(res => {
-            setStage(prev => prev + 1);
+            if (stage === 3) {
+                router.push("/");
+            } else {
+                setStage(prev => prev + 1);
+                setBrand("");
+                setDate("");
+            }
         }).catch(e => {
             console.log(e);
         }).finally(() => {
             setIsLoading(false);
-            setBrand("");
-            setDate("");
         })
     }
 
@@ -78,7 +82,7 @@ export default function Onboarding({thisUser}: {thisUser: HydratedDocument<IUser
                                 </select>
                             </>
                         )}
-                        <p className="text-2xl mt-16 mb-8">By when did you receive {q2fill}</p>
+                        <p className="text-2xl mt-16 mb-8">When did you receive {q2fill}</p>
                         <input type="date" value={date} onChange={e => setDate(e.target.value)} min="2019-01-01"
                                max={format(addDays(new Date(), 1), "yyyy-MM-dd")} className="p-4 border w-full block shadow-lg" />
                         <button onClick={onNext} className="p-4 bg-black text-white mt-16 block w-full shadow-lg disabled:opacity-50 hover:shadow-xl hover:bg-neutral-900 transition" disabled={isLoading || !date || !(brand || stage !== 1)}>{isLoading ? "loading..." : "Next"}</button>
