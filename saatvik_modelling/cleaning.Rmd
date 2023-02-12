@@ -1,0 +1,98 @@
+---
+title: "Cleaning"
+author: "Saatvik Kher"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readxl)
+theme_set(theme_minimal())
+```
+
+# Imports
+
+```{r}
+primary <- read_excel("WeeklySummary_COVID19_VE_Studies_02Feb2023_0.xlsx", 
+    sheet = "Primary Series Studies")
+
+booster <- read_excel("WeeklySummary_COVID19_VE_Studies_02Feb2023_0.xlsx", 
+    sheet = "Booster Studies")
+```
+
+# Cleaning and preliminary analysis
+
+VE distribution for Pfizer and Moderna
+
+```{r}
+primary %>%
+  filter(str_detect(vaccine, "Pfizer"),
+         VE > 0) %>%
+  ggplot(aes(VE)) +
+  geom_density() +
+  ggtitle("Pfizer")
+```
+
+```{r}
+primary %>%
+  filter(str_detect(vaccine, "Moderna"),
+         VE > 0) %>%
+  ggplot(aes(VE)) +
+  geom_density() +
+  ggtitle("Moderna")
+```
+
+Similar distributions for both! That's good. Let's try to bin it by dose day
+
+
+```{r}
+primary %>%
+  filter(`first author` == "Lin", str_detect(vaccine, "Pfizer"), `study ID` == 326) %>%
+  mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL)) %>%
+  mutate(timing_of_dose_days = case_when(
+    str_detect(timing_of_dose_days, "months") ~ 30 * parse_number(timing_of_dose_days),
+    str_detect(timing_of_dose_days, "weeks") & !str_detect(timing_of_dose_days, "to") & !str_detect(timing_of_dose_days, "-") ~ 7*parse_number(timing_of_dose_days)
+    )
+  ) %>%
+  ggplot(aes(timing_of_dose_days, VE, color = outcome_category)) +
+  geom_point() +
+  geom_line() +
+  geom_ribbon(aes(ymin = LCL, ymax = UCL, group = outcome_category, fill=outcome_category), alpha = 0.2)
+```
+
+```{r}
+primary %>%
+  filter(`first author` == "Lin", str_detect(vaccine, "Moderna"), `study ID` == 326) %>%
+  mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL)) %>%
+  mutate(timing_of_dose_days = case_when(
+    str_detect(timing_of_dose_days, "months") ~ 30 * parse_number(timing_of_dose_days),
+    str_detect(timing_of_dose_days, "weeks") & !str_detect(timing_of_dose_days, "to") & !str_detect(timing_of_dose_days, "-") ~ 7*parse_number(timing_of_dose_days)
+    )
+  ) %>%
+  ggplot(aes(timing_of_dose_days, VE, color = outcome_category)) +
+  geom_point() +
+  geom_line() +
+  geom_ribbon(aes(ymin = LCL, ymax = UCL, group = outcome_category, fill=outcome_category), alpha = 0.2)
+```
+
+```{r}
+primary %>%
+  filter(`first author` == "Lin", str_detect(vaccine, "Janssen"), `study ID` == 326) %>%
+  mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL)) %>%
+  mutate(timing_of_dose_days = case_when(
+    str_detect(timing_of_dose_days, "months") ~ 30 * parse_number(timing_of_dose_days),
+    str_detect(timing_of_dose_days, "weeks") & !str_detect(timing_of_dose_days, "to") & !str_detect(timing_of_dose_days, "-") ~ 7*parse_number(timing_of_dose_days)
+    )
+  ) %>%
+  ggplot(aes(timing_of_dose_days, VE, color = outcome_category)) +
+  geom_point() +
+  geom_line() +
+  geom_ribbon(aes(ymin = LCL, ymax = UCL, group = outcome_category, fill=outcome_category), alpha = 0.2)
+```
+
+
+
+
+# 
