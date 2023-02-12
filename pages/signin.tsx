@@ -1,9 +1,14 @@
 import { GetServerSidePropsContext } from "next";
 import {getSession, signIn} from "next-auth/react";
+import { useEffect } from "react";
 
 export default function SignIn() {
+    useEffect(() => {
+        signIn("google");
+    }, []);
+
     return (
-        <button onClick={() => signIn("google")}>Sign in</button>
+        <></>
     )
 }
 

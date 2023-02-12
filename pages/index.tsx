@@ -266,8 +266,8 @@ export default function Index({ thisUser, initVaxEvents }: {
                     <p>Sources:</p>
                     <ul className="list-disc pl-4 my-2">
                         <li className="my-2"><b>Primary series: Lin, Dan-Yu, et al. 2022 (n = 10.6 million)</b>. “Association of Primary and Booster Vaccination and Prior Infection with SARS-COV-2 Infection and Severe COVID-19 Outcomes.” JAMA, vol. 328, no. 14, 2022, p. 1415., https://doi.org/10.1001/jama.2022.17876.</li>
-                        <li className="my-2"><b>First booster: Tseng, Hung Fu, et al. 2023 (n = 123,236)</b>. “Effectiveness of Mrna-1273 Vaccination against SARS-COV-2 Omicron Subvariants BA.1, Ba.2, Ba.2.12.1, Ba.4, and Ba.5.” Nature Communications, vol. 14, no. 1, 2023, https://doi.org/10.1038/s41467-023-35815-7.</li>
-                        <li className="my-2"><b>Second booster: Ferdinants, Jill M, et al. 2022 (n = 893,461)</b>. “Waning of Vaccine Effectiveness against Moderate and Severe COVID-19 among Adults in the US from the Vision Network: Test Negative, Case-Control Study.” BMJ, 2022, https://doi.org/10.1136/bmj-2022-072141.</li>
+                        <li className="my-2"><b>Booster data: Tseng, Hung Fu, et al. 2023 (n = 123,236)</b>. “Effectiveness of Mrna-1273 Vaccination against SARS-COV-2 Omicron Subvariants BA.1, Ba.2, Ba.2.12.1, Ba.4, and Ba.5.” Nature Communications, vol. 14, no. 1, 2023, https://doi.org/10.1038/s41467-023-35815-7.</li>
+                        <li className="my-2"><b>Booster data: Ferdinands, Jill M, et al. 2022 (n = 893,461)</b>. “Waning of Vaccine Effectiveness against Moderate and Severe COVID-19 among Adults in the US from the Vision Network: Test Negative, Case-Control Study.” BMJ, 2022, https://doi.org/10.1136/bmj-2022-072141.</li>
                     </ul>
                 </div>
                 <hr className="my-8"/>
@@ -303,7 +303,7 @@ export default function Index({ thisUser, initVaxEvents }: {
 export async function getServerSideProps(context: GetServerSidePropsContext) {
     const session = await getSession(context);
 
-    if (!session) return { redirect: { permanent: false, destination: "/signin" } };
+    if (!session) return { redirect: { permanent: false, destination: "/lander" } };
 
     try {
         mongoose.set("strictQuery", false);
