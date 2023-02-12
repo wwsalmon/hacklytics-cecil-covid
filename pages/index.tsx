@@ -32,11 +32,34 @@ function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, unde
     }[type];
 
     const immunitySeries = vaxEvents.sort((a, b) => +new Date(a.date) - +new Date(b.date)).map((d, i, a) => {
-        const numDays = differenceInDays(a[i + 1] ? dateOnly(a[i+1].date) : addDays(new Date(), 365), dateOnly(d.date));
-        const thisData = primary.filter(x => x.vaccine === d.vaxId && x.outcome_category === type).filter(x => x.days < numDays).map(x => ({
+        const endDate = a[i + 1] ? dateOnly(a[i+1].date) : addDays(new Date(), 365);
+        const numDays = differenceInDays(endDate, dateOnly(d.date));
+        const thisSeriesData = primary.filter(x => x.vaccine === d.vaxId && x.outcome_category === type);
+        let thisData = thisSeriesData.filter(x => x.days < numDays).map(x => ({
             ...x,
             date: addDays(dateOnly(d.date), x.days),
         }));
+        if (thisData.length < thisSeriesData.length) {
+            const lastPoint = thisData[thisData.length - 1];
+            const nextPoint = thisSeriesData[thisData.length];
+            const diffDays = nextPoint.days - lastPoint.days;
+            const extraDays = numDays - lastPoint.days;
+
+            let extraPoint = {
+                date: endDate,
+                VE: 0,
+                UCL: 0,
+                LCL: 0,
+            }
+
+            for (let property of ["VE", "UCL", "LCL"]) {
+                const change = nextPoint[property] - lastPoint[property];
+                const rate = change / diffDays;
+                extraPoint[property] = lastPoint[property] + rate * extraDays;
+            }
+
+            thisData.push(extraPoint);
+        }
         return thisData;
     });
 

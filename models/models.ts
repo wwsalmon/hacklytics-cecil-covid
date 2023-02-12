@@ -12,11 +12,6 @@ const VaxEventSchema = new mongoose.Schema<IVaxEvent>({
     userId: mongoose.Schema.Types.ObjectId,
 }, {timestamps: true});
 
-const VaxSchema = new mongoose.Schema<IVax>({
-    brand: {type: String, required: true},
-    product: {type: String, required: true},
-}, {timestamps: true});
-
 export const UserModel = mongoose.models.user || mongoose.model("user", UserSchema);
 export const VaxEventModel = mongoose.models.vaxEvent || mongoose.model("vaxEvent", VaxEventSchema);
 
@@ -30,9 +25,4 @@ export interface IVaxEvent {
     date: string,
     vaxId: string,
     userId: string,
-}
-
-export interface IVax {
-    brand: string,
-    product: string,
 }
