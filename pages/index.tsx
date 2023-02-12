@@ -26,8 +26,8 @@ const chartPadding = {
 
 function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, undefined>, vaxEvents: HydratedDocument<IVaxEvent>[], data: {VE: number, days: number}[], xScale: d3.ScaleTime<number, number>, yScale: d3.ScaleLinear<number, number>, type: "infection" | "death" | "severe") {
     const color = {
-        infection: "#ffa600",
-        severe: "#ff0000",
+        infection: "#FED752",
+        severe: "#FC3142",
         death: "black",
     }[type];
 
@@ -66,7 +66,7 @@ function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, unde
             )
             .attr("stroke", color)
             .attr("fill", "transparent")
-            .attr("strokeWidth", 4);
+            .attr("stroke-width", 4);
     }
 
     seriesGroups.selectAll("circle.immunity" + type).data(d => d).join("circle").attr("class", "immunity" + type).attr("r", 5).attr("fill", color).attr("cx", d => xScale(d.date) + chartPadding.left).attr("cy", d => yScale(d.VE) + chartPadding.top);
@@ -94,7 +94,7 @@ export default function Index({ thisUser }: {
         const xMax = addDays(new Date(), 365);
         const xMin = dateOnly("2019-01-01");
         const xRangeDays = differenceInDays(xMax, xMin);
-        const xPerDay = chartWidth / (365);
+        const xPerDay = chartWidth / (365 * 2);
         const xRange = xRangeDays * xPerDay;
 
         svg.attr("width", xRange);
@@ -125,8 +125,8 @@ export default function Index({ thisUser }: {
             });
 
         // add vaxEvent lines
-        svg.selectAll("line.vax").data(vaxEvents).join("line").attr("class", "vax").attr("x1", d => xScale(dateOnly(d.date)) + chartPadding.left).attr("x2", d => xScale(dateOnly(d.date)) + chartPadding.left).attr("y1", chartPadding.top).attr("y2", chartPadding.top + chartHeight).attr("stroke", "red").attr("stroke-width", 2);
-        svg.selectAll("text.vax").data(vaxEvents).join("text").attr("class", "vax").attr("x", d => xScale(dateOnly(d.date)) + chartPadding.left + 8).attr("y", chartPadding.top + 8).text(d => `${format(dateOnly(d.date), "MMMM d, yyyy")} ${d.vaxId}`).attr("fill", "red");
+        svg.selectAll("line.vax").data(vaxEvents).join("line").attr("class", "vax").attr("x1", d => xScale(dateOnly(d.date)) + chartPadding.left).attr("x2", d => xScale(dateOnly(d.date)) + chartPadding.left).attr("y1", chartPadding.top).attr("y2", chartPadding.top + chartHeight).attr("stroke", "#FC3142").attr("stroke-width", 4);
+        svg.selectAll("text.vax").data(vaxEvents).join("text").attr("class", "vax").attr("x", d => xScale(dateOnly(d.date)) + chartPadding.left + 8).attr("y", chartPadding.top + 8).text(d => `${format(dateOnly(d.date), "MMMM d, yyyy")} ${d.vaxId}`).attr("fill", "#FC3142");
 
         // add vaxEvent immunity
         addImmunity(svg, vaxEvents, temp, xScale, yScale, "infection");
@@ -168,8 +168,30 @@ export default function Index({ thisUser }: {
     return (
         <>
             <Navbar thisUser={thisUser}/>
-            <div className="max-w-2xl mx-auto px-4 py-8">
-                <H1>Immunity graph</H1>
+            <div className="w-full mx-auto px-4 py-8">
+                <H2 className="text-center text-2xl">Your current<br/>vaccine effectiveness</H2>
+                <p className="text-center text-9xl font-garamond font-extrabold text-accent">73%</p>
+                <p className="text-center opacity-75 mt-8 mb-8">less likely to get infected compared to unvaccinated</p>
+                <hr className="my-8"/>
+                <p className="text-center text-lg"><span className="font-garamond font-bold text-xl text-accent">84%</span> less likely to <b>die</b> from COVID</p>
+                <p className="text-center text-lg"><span className="font-garamond font-bold text-xl text-accent">80%</span> less likely to suffer <b>severe illness</b> from COVID</p>
+                <hr className="my-8"/>
+                <H1 className="text-center mb-8 mt-16">Effectiveness over time</H1>
+                <div className="flex items-center justify-center -mx-6 mb-16">
+                    <span className="opacity-75 mr-6">Against:</span>
+                    <div className="flex items-center px-6">
+                        <div className="w-4 h-4 bg-accent mr-3"/>
+                        <span>Severe illness</span>
+                    </div>
+                    <div className="flex items-center px-6">
+                        <div className="w-4 h-4 bg-[#FED752] mr-3"/>
+                        <span>Infection</span>
+                    </div>
+                    <div className="flex items-center px-6">
+                        <div className="w-4 h-4 bg-black mr-3"/>
+                        <span>Death</span>
+                    </div>
+                </div>
                 <div className="relative overflow-y-hidden" style={{height: 400, width: "100%"}}>
                     <svg ref={axisRef} className="absolute top-0 left-0 w-full" style={{height: 400}}/>
                     <div className="absolute top-0 left-0 w-full overflow-x-auto overflow-y-hidden" style={{height: 400}}>
