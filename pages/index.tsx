@@ -24,14 +24,8 @@ const chartPadding = {
     right: 8,
 };
 
-function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, undefined>, vaxEvents: HydratedDocument<IVaxEvent>[], data: {VE: number, days: number}[], xScale: d3.ScaleTime<number, number>, yScale: d3.ScaleLinear<number, number>, type: "infection" | "death" | "severe") {
-    const color = {
-        infection: "#FED752",
-        severe: "#FC3142",
-        death: "black",
-    }[type];
-
-    const immunitySeries = vaxEvents.sort((a, b) => +new Date(a.date) - +new Date(b.date)).map((d, i, a) => {
+function getSeriesData(vaxEvents: HydratedDocument<IVaxEvent>[], type: "infection" | "death" | "severe") {
+    return vaxEvents.sort((a, b) => +new Date(a.date) - +new Date(b.date)).map((d, i, a) => {
         const endDate = a[i + 1] ? dateOnly(a[i+1].date) : addDays(new Date(), 365);
         const numDays = differenceInDays(endDate, dateOnly(d.date));
         const thisSeriesData = primary.filter(x => x.vaccine === d.vaxId && x.outcome_category === type);
@@ -62,6 +56,35 @@ function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, unde
         }
         return thisData;
     });
+}
+
+function getCurrentStat(vaxEvents: HydratedDocument<IVaxEvent>[], type: "infection" | "death" | "severe") {
+    const thisStat = getSeriesData(vaxEvents, type).reduce((a, b) => [...a, ...b], []).sort((a, b) => +new Date(a.date) - +new Date(b.date));
+
+    if (+new Date(thisStat[thisStat.length - 1].date) < +new Date()) {
+        return "<" + thisStat[thisStat.length - 1].VE.toPrecision(3);
+    }
+
+    const nextStatIndex = thisStat.findIndex(d => +new Date(d.date) > +new Date());
+    if (nextStatIndex === 0) return 0;
+
+    const nextStat = thisStat[nextStatIndex];
+    const prevStat = thisStat[nextStatIndex - 1];
+    const change = nextStat.VE - prevStat.VE;
+    const diffDays = differenceInDays(nextStat.date, prevStat.date);
+    const rate = change / diffDays;
+    const daysToPresent = differenceInDays(new Date(), prevStat.date);
+    return (prevStat.VE + rate * daysToPresent).toPrecision(3);
+}
+
+function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, undefined>, vaxEvents: HydratedDocument<IVaxEvent>[], data: {VE: number, days: number}[], xScale: d3.ScaleTime<number, number>, yScale: d3.ScaleLinear<number, number>, type: "infection" | "death" | "severe") {
+    const color = {
+        infection: "#FED752",
+        severe: "#FC3142",
+        death: "black",
+    }[type];
+
+    const immunitySeries = getSeriesData(vaxEvents, type);
 
     const seriesGroups = svg.selectAll("g.immunitySeries" + type).data(immunitySeries).join("g").attr("class", "immunitySeries" + type);
 
@@ -197,11 +220,11 @@ export default function Index({ thisUser }: {
             <Navbar thisUser={thisUser}/>
             <div className="w-full mx-auto px-4 py-8">
                 <H2 className="text-center text-2xl">Your current<br/>vaccine effectiveness</H2>
-                <p className="text-center text-9xl font-garamond font-extrabold text-accent">73%</p>
+                <p className="text-center text-9xl font-garamond font-extrabold"><span className="bg-infection leading-none inline-block px-4">{getCurrentStat(vaxEvents, "infection")}%</span></p>
                 <p className="text-center opacity-75 mt-8 mb-8">less likely to get infected compared to unvaccinated</p>
                 <hr className="my-8"/>
-                <p className="text-center text-lg"><span className="font-garamond font-bold text-xl text-accent">84%</span> less likely to <b>die</b> from COVID</p>
-                <p className="text-center text-lg"><span className="font-garamond font-bold text-xl text-accent">80%</span> less likely to suffer <b>severe illness</b> from COVID</p>
+                <p className="text-center text-lg"><span className="font-garamond font-bold text-xl text-accent">{getCurrentStat(vaxEvents, "death")}%</span> less likely to <b>die</b> from COVID</p>
+                <p className="text-center text-lg"><span className="font-garamond font-bold text-xl text-accent">{getCurrentStat(vaxEvents, "severe")}%</span> less likely to suffer <b>severe illness</b> from COVID</p>
                 <hr className="my-8"/>
                 <H1 className="text-center mb-8 mt-16">Effectiveness over time</H1>
                 <div className="flex items-center justify-center -mx-6 mb-16">

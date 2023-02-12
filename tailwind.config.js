@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         accent: "#FC3142",
+        infection: "#FED752",
       }
     },
   },
