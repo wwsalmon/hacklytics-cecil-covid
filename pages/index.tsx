@@ -1,7 +1,7 @@
 import { GetServerSidePropsContext } from "next";
 import { getSession } from "next-auth/react";
 import mongoose, { HydratedDocument } from "mongoose";
-import { IUser, IVaxEvent, UserModel } from "../models/models";
+import { IUser, IVaxEvent, UserModel, VaxEventModel } from "../models/models";
 import { createAccount } from "../utils/createAccount";
 import { cleanForJSON } from "../utils/cleanForJson";
 import { useEffect, useRef, useState } from "react";
@@ -123,10 +123,11 @@ function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, unde
     seriesGroups.selectAll("circle.immunity" + type).data(d => d).join("circle").attr("class", "immunity" + type).attr("r", 5).attr("fill", color).attr("cx", d => xScale(d.date) + chartPadding.left).attr("cy", d => yScale(d.VE) + chartPadding.top);
 }
 
-export default function Index({ thisUser }: {
+export default function Index({ thisUser, initVaxEvents }: {
     thisUser: HydratedDocument<IUser>,
+    initVaxEvents: HydratedDocument<IVaxEvent>[],
 }) {
-    const [vaxEvents, setVaxEvents] = useState<HydratedDocument<IVaxEvent>[]>([]);
+    const [vaxEvents, setVaxEvents] = useState<HydratedDocument<IVaxEvent>[]>(initVaxEvents);
     const [date, setDate] = useState<string>("");
     const [vaxId, setVaxId] = useState<string>("Pfizer 1st and 2nd doses"); // temporarily fixed;
     const [iter, setIter] = useState<number>(0);
@@ -313,7 +314,11 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 
         if (!thisUser) thisUser = await createAccount(session.user);
 
-        return {props: {thisUser: cleanForJSON(thisUser)}};
+        const vaxEvents = await VaxEventModel.find({userId: thisUser._id});
+
+        if (!vaxEvents.length) return { redirect: {permanent: false, destination: "/onboarding"}};
+
+        return {props: {thisUser: cleanForJSON(thisUser), initVaxEvents: cleanForJSON(vaxEvents)}};
     } catch (e) {
         console.log(e);
         return { notFound: true };
