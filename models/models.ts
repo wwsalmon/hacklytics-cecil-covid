@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema<IUser>({
 
 const VaxEventSchema = new mongoose.Schema<IVaxEvent>({
     date: {type: String, required: true},
-    vaxId: mongoose.Schema.Types.ObjectId,
+    vaxId: {type: String, required: true},
     userId: mongoose.Schema.Types.ObjectId,
 }, {timestamps: true});
 
@@ -19,7 +19,6 @@ const VaxSchema = new mongoose.Schema<IVax>({
 
 export const UserModel = mongoose.models.user || mongoose.model("user", UserSchema);
 export const VaxEventModel = mongoose.models.vaxEvent || mongoose.model("vaxEvent", VaxEventSchema);
-export const VaxModel = mongoose.models.vaxModel || mongoose.model("vaxModel", VaxSchema);
 
 export interface IUser {
     name: string,
@@ -31,10 +30,6 @@ export interface IVaxEvent {
     date: string,
     vaxId: string,
     userId: string,
-}
-
-export interface IVaxEventAgg extends IVaxEvent {
-    vax: HydratedDocument<IVax>,
 }
 
 export interface IVax {

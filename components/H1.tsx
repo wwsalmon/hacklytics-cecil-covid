@@ -6,6 +6,6 @@ export default function H1(props: ComponentProps<"h1">) {
     delete domProps.className;
 
     return (
-        <h1 className={classNames("font-bold text-2xl", props.className)} {...domProps}/>
+        <h1 className={classNames("font-semibold text-5xl font-garamond", props.className)} {...domProps}/>
     )
 }
