@@ -1,0 +1,13 @@
+days,VE,LCL,UCL,vaccine,booster_dose,outcome_category
+22,85.8,82.7,88.3,Moderna,1,infection
+60,76.3,73.9,78.6,Moderna,1,infection
+120.5,67.3,62,71.9,Moderna,1,infection
+150,54.9,35.6,68.4,Moderna,1,infection
+22,64.3,50.7,74.2,Moderna,2,infection
+60,51.1,35.5,63,Moderna,2,infection
+90,17.3,-45.3,62.6,Moderna,2,infection
+60,89,88,90,Moderna,1,severe
+90,86,85,87,Moderna,1,severe
+150,66,63,68,Moderna,1,severe
+210,41,35,47,Moderna,1,severe
+240,31,17,43,Moderna,1,severe
