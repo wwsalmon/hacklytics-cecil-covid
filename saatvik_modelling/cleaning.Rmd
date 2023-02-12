@@ -106,10 +106,16 @@ primary %>%
     str_detect(timing_of_dose_days, "weeks") & !str_detect(timing_of_dose_days, "to") & !str_detect(timing_of_dose_days, "-") ~ 7*parse_number(timing_of_dose_days)
     ),
     vaccine = case_when(
-      
+      str_detect(vaccine, "Pfizer") ~ "Pfizer",
+      str_detect(vaccine, "Moderna") ~ "Moderna",
+      str_detect(vaccine, "Janssen") ~ "Janssen"
     )
   ) %>%
-  
+  select(timing_of_dose_days, VE, LCL, UCL, vaccine, outcome_category) %>%
+  ggplot(aes(timing_of_dose_days, VE, color = vaccine)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_grid(~outcome_category)
 ```
 
 
@@ -149,18 +155,18 @@ booster %>%
 
 
 ```{r, warning=FALSE}
-primaryxh <- (read_csv("../xh_temp_folder/cleaned_ve_data.csv"))[-1]
+primaryxh <- (read_csv("../xh_temp_folder/cleaned_ve_data_no_open_interval.csv"))[-1]
 
 filtered <- primaryxh %>%
   filter(vaccine %in% c("Pfizer", "Moderna", "Janssen"),
          VE > 0,
-         days_since_dose < 400,
+         days_since_first_dose < 400,
          outcome_category == "infection",
          (time_sup - time_inf) < 42
          ) %>%
   mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL), `study ID` = as.factor(`study ID`)) %>%
   group_by(`study ID`) %>%
-  summarise(max = max(days_since_dose)) %>% 
+  summarise(max = max(days_since_first_dose)) %>% 
   filter(max > 100) %>%
   pull(`study ID`)
 
@@ -170,16 +176,15 @@ filtered <- primaryxh %>%
 primaryxh %>%
   filter(vaccine %in% c("Pfizer", "Moderna", "Janssen"),
          VE > 0,
-         days_since_dose < 400,
+         days_since_first_dose < 400,
          outcome_category == "infection",
          (time_sup - time_inf) < 42,
          `study ID` %in% filtered
          ) %>%
   mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL), `study ID` = as.factor(`study ID`)) %>%
-  ggplot(aes(log(days_since_dose), VE)) +
+  ggplot(aes(days_since_first_dose, VE, color = `study ID`)) +
   geom_point() +
-  geom_smooth(method = "lm") +
-  theme(legend.position = "none") +
+  geom_line() +
   facet_grid(~vaccine)
 ```
 
@@ -187,18 +192,14 @@ primaryxh %>%
 primaryxh %>%
   filter(vaccine %in% c("Pfizer"),
          VE > 0,
-         days_since_dose < 400,
+         days_since_first_dose < 400,
          outcome_category == "infection",
          (time_sup - time_inf) < 42,
          `study ID` %in% filtered
          ) %>%
   mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL), `study ID` = as.factor(`study ID`)) %>%
-  lm(VE~days_since_dose, data = .) %>%
-  augment() %>%
-  ggplot(aes(.fitted, .resid)) +
-  geom_point() +
-  ylim(-60, 60) +
-  geom_hline(yintercept = 0)
+  lm(VE~days_since_first_dose, data = .) %>%
+  glance()
 ```
 
 
