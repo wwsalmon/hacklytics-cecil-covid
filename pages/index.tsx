@@ -148,8 +148,12 @@ export default function Index({ thisUser }: {
             });
 
         // add vaxEvent lines
-        svg.selectAll("line.vax").data(vaxEvents).join("line").attr("class", "vax").attr("x1", d => xScale(dateOnly(d.date)) + chartPadding.left).attr("x2", d => xScale(dateOnly(d.date)) + chartPadding.left).attr("y1", chartPadding.top).attr("y2", chartPadding.top + chartHeight).attr("stroke", "#FC3142").attr("stroke-width", 4);
-        svg.selectAll("text.vax").data(vaxEvents).join("text").attr("class", "vax").attr("x", d => xScale(dateOnly(d.date)) + chartPadding.left + 8).attr("y", chartPadding.top + 8).text(d => `${format(dateOnly(d.date), "MMMM d, yyyy")} ${d.vaxId}`).attr("fill", "#FC3142");
+        svg.selectAll("line.vax").data(vaxEvents).join("line").attr("class", "vax").attr("x1", d => xScale(dateOnly(d.date)) + chartPadding.left).attr("x2", d => xScale(dateOnly(d.date)) + chartPadding.left).attr("y1", chartPadding.top).attr("y2", chartPadding.top + chartHeight).attr("stroke", "#FC3142").attr("stroke-width", 2).attr("stroke-dasharray", 4);
+        svg.selectAll("text.vaxDate").data(vaxEvents).join("text").attr("class", "vaxDate").attr("x", d => xScale(dateOnly(d.date)) + chartPadding.left + 12).attr("y", chartPadding.top + chartHeight - 32).text(d => format(dateOnly(d.date), "MMMM d, yyyy")).attr("fill", "#FC3142").attr("font-size", 12).style("text-transform", "uppercase").style("font-weight", 700);
+        svg.selectAll("text.vax").data(vaxEvents).join("text").attr("class", "vax").attr("x", d => xScale(dateOnly(d.date)) + chartPadding.left + 12).attr("y", chartPadding.top + chartHeight - 12).text(d => d.vaxId).attr("fill", "#FC3142");
+
+        svg.selectAll("line.present").data([0]).join("line").attr("class", "present").attr("x1", xScale(new Date()) + chartPadding.left).attr("x2", xScale(new Date()) + chartPadding.left).attr("y1", chartPadding.top).attr("y2", chartPadding.top + chartHeight).attr("stroke", "black").attr("stroke-width", 2).attr("stroke-dasharray", 4);
+        svg.selectAll("text.present").data([0]).join("text").attr("class", "present").attr("x", xScale(new Date()) + chartPadding.left + 12).attr("y", chartPadding.top + 12).text("today").attr("font-size", 12).style("text-transform", "uppercase").style("font-weight", 700);
 
         // add vaxEvent immunity
         addImmunity(svg, vaxEvents, temp, xScale, yScale, "infection");
