@@ -9,9 +9,11 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import axios from "axios";
 import H2 from "../components/H2";
 import H1 from "../components/H1";
-import { format } from "date-fns";
+import { addDays, differenceInDays, format } from "date-fns";
 import { dateOnly } from "../utils/dateOnly";
 import * as d3 from "d3";
+import temp from "../data/temp.json";
+import temp2 from "../data/temp2.json";
 
 const chartPadding = {
     top: 8,
@@ -19,6 +21,31 @@ const chartPadding = {
     bottom: 32,
     right: 8,
 };
+
+function addImmunity(svg: d3.Selection<SVGSVGElement | null, unknown, null, undefined>, vaxEvents: HydratedDocument<IVaxEventAgg>[], data: {VE: number, days: number}[], xScale: d3.ScaleTime<number, number>, yScale: d3.ScaleLinear<number, number>, color: string, id: string) {
+    const immunitySeries = vaxEvents.sort((a, b) => +new Date(a.date) - +new Date(b.date)).map((d, i, a) => {
+        const numDays = differenceInDays(a[i + 1] ? new Date(a[i+1].date) : new Date(), new Date(d.date));
+        const thisData = data.filter(x => x.days < numDays).map(x => ({
+            ...x,
+            date: addDays(new Date(d.date), x.days),
+        }));
+        return thisData;
+    });
+
+    const curveFunc = d3.line()
+        .x(d => xScale(new Date(d.date)) + chartPadding.left)
+        .y(d => yScale(d.VE) + chartPadding.top);
+
+    const seriesGroups = svg.selectAll("g.immunitySeries" + id).data(immunitySeries).join("g").attr("class", "immunitySeries" + id);
+
+    svg.selectAll("path.immunity" + id).remove();
+
+    for (let series of immunitySeries) {
+        svg.append("path").datum(series.sort((a, b) => +new Date(a.date) - +new Date(b.date))).attr("class", "immunity" + id).attr("d", curveFunc).attr("stroke", color).attr("fill", "transparent").attr("strokeWidth", 4);
+    }
+
+    seriesGroups.selectAll("circle.immunity" + id).data(d => d).join("circle").attr("class", "immunity" + id).attr("r", 5).attr("fill", color).attr("cx", d => xScale(d.date) + chartPadding.left).attr("cy", d => yScale(d.VE) + chartPadding.top);
+}
 
 export default function Index({ thisUser }: {
     thisUser: HydratedDocument<IUser>,
@@ -48,8 +75,14 @@ export default function Index({ thisUser }: {
         svg.select("g.yAxis").node() && svg.select("g.yAxis").remove();
         svg.append("g").attr("class", "yAxis").attr("transform", `translate(${chartPadding.left}, ${chartPadding.top})`).call(yAxis);
 
+        // add vaxEvent lines
         svg.selectAll("line.vax").data(vaxEvents).join("line").attr("class", "vax").attr("x1", d => xScale(new Date(d.date)) + chartPadding.left).attr("x2", d => xScale(new Date(d.date)) + chartPadding.left).attr("y1", chartPadding.top).attr("y2", chartPadding.top + chartHeight).attr("stroke", "red").attr("strokeWidth", 4);
 
+        // add vaxEvent immunity
+        addImmunity(svg, vaxEvents, temp, xScale, yScale, "red", "red");
+        addImmunity(svg, vaxEvents, temp2, xScale, yScale, "blue", "blue");
+
+        svg.selectAll("path.vaxCurve").data(vaxEvents)
     }, [vaxEvents]);
 
     useEffect(() => {
