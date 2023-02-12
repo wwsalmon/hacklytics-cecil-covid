@@ -37,3 +37,6 @@ Similarly, we unified and filtered the data entries for dosage sequence, vaccine
 
 ## Boost it up!
 > idk why I made this section, maybe just put in some whitty catch phrases
+
+## Citations
+Lin D, Gu Y, Xu Y, et al. Association of Primary and Booster Vaccination and Prior Infection With SARS-CoV-2 Infection and Severe COVID-19 Outcomes. JAMA. 2022;328(14):1415–1426. doi:10.1001/jama.2022.17876
