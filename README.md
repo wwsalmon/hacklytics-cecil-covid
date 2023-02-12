@@ -6,6 +6,10 @@ Team *Cecil Separated Values (Pomona College)*
 
 > Please reorder and rename these titles and delete my silly comments before submitting thx
 
+## Try our tracker!
+
+> The link to the website
+
 ## Motivation
 
 Lorem Ipsum
