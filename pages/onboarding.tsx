@@ -38,7 +38,7 @@ export default function Onboarding({thisUser}: {thisUser: HydratedDocument<IUser
         setIsLoading(true);
 
         axios.post("/api/vaxEvent", {
-            vaxId: brand + " " + (stage === 1 ? brand === "J&J" ? "1st dose" : "1st and 2nd doses" : stage === 2 ? "first booster" : "second booster"),
+            vaxId: (stage === 1 ? brand + " " + brand === "J&J" ? "1st dose" : "1st and 2nd doses" : stage === 2 ? "First booster" : "Second booster"),
             date: date,
         }).then(res => {
             setStage(prev => prev + 1);
@@ -68,19 +68,23 @@ export default function Onboarding({thisUser}: {thisUser: HydratedDocument<IUser
                             <div className={classNames("h-full absolute left-0 top-0 bg-[#FC3142]", {1: "w-4", 2: "w-1/3", 3: "w-2/3"}[stage])}/>
                             <img src="/bullet.png" alt="silly goofy bullet point" className="h-12 rotate-90 absolute -top-5" style={{left: (stage - 1) / 3 * 100 + "%"}}/>
                         </div>
-                        <p className="text-2xl mt-16 mb-8">What brand {q1fill}</p>
-                        <select value={brand} onChange={e => setBrand(e.target.value)} className="p-4 border w-full block shadow-lg">
-                            {["Pfizer", "Moderna", "J&J", ""].map(d => (
-                                <option value={d} key={d}>{d}</option>
-                            ))}
-                        </select>
+                        {stage === 1 && (
+                            <>
+                                <p className="text-2xl mt-16 mb-8">What brand {q1fill}</p>
+                                <select value={brand} onChange={e => setBrand(e.target.value)} className="p-4 border w-full block shadow-lg">
+                                    {["Pfizer", "Moderna", "J&J", ""].map(d => (
+                                        <option value={d} key={d}>{d}</option>
+                                    ))}
+                                </select>
+                            </>
+                        )}
                         <p className="text-2xl mt-16 mb-8">By when did you receive {q2fill}</p>
                         <input type="date" value={date} onChange={e => setDate(e.target.value)} min="2019-01-01"
                                max={format(addDays(new Date(), 1), "yyyy-MM-dd")} className="p-4 border w-full block shadow-lg" />
-                        <button onClick={onNext} className="p-4 bg-black text-white mt-16 block w-full shadow-lg disabled:opacity-50 hover:shadow-xl hover:bg-neutral-900 transition" disabled={isLoading || !date || !brand}>{isLoading ? "loading..." : "Next"}</button>
+                        <button onClick={onNext} className="p-4 bg-black text-white mt-16 block w-full shadow-lg disabled:opacity-50 hover:shadow-xl hover:bg-neutral-900 transition" disabled={isLoading || !date || !(brand || stage !== 1)}>{isLoading ? "loading..." : "Next"}</button>
                         {stage > 1 && (
-                            <button className="p-4 border border-black mt-4 w-full shadow-lg block hover:bg-gray-100 hover:shadow-xl transition" onClick={() => router.push("/")}>No {{
-                                2: "boosters",
+                            <button className="p-4 border border-black mt-4 w-full shadow-lg block hover:bg-gray-100 hover:shadow-xl transition" onClick={() => router.push("/")}>Haven't received {{
+                                2: "first booster",
                                 3: "second booster",
                             }[stage]}</button>
                         )}
