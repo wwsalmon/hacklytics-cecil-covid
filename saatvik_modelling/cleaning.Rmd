@@ -9,6 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(readxl)
+library(broom)
 theme_set(theme_minimal())
 ```
 
@@ -20,6 +21,8 @@ primary <- read_excel("WeeklySummary_COVID19_VE_Studies_02Feb2023_0.xlsx",
 
 booster <- read_excel("WeeklySummary_COVID19_VE_Studies_02Feb2023_0.xlsx", 
     sheet = "Booster Studies")
+
+booster <- booster %>% select(-`...22`, -`...23`, -`...24`, -`...25`)
 ```
 
 # Cleaning and preliminary analysis
@@ -73,7 +76,7 @@ primary %>%
   ) %>%
   ggplot(aes(timing_of_dose_days, VE, color = outcome_category)) +
   geom_point() +
-  geom_line() +
+  geom_smooth(aes(group=outcome_category), se=FALSE) +
   geom_ribbon(aes(ymin = LCL, ymax = UCL, group = outcome_category, fill=outcome_category), alpha = 0.2)
 ```
 
@@ -94,5 +97,133 @@ primary %>%
 
 
 
+```{r}
+primary %>%
+  filter(`study ID` == 326) %>%
+  mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL)) %>%
+  mutate(timing_of_dose_days = case_when(
+    str_detect(timing_of_dose_days, "months") ~ 30 * parse_number(timing_of_dose_days),
+    str_detect(timing_of_dose_days, "weeks") & !str_detect(timing_of_dose_days, "to") & !str_detect(timing_of_dose_days, "-") ~ 7*parse_number(timing_of_dose_days)
+    ),
+    vaccine = case_when(
+      
+    )
+  ) %>%
+  
+```
 
-# 
+
+
+
+# Boosters?? 
+
+```{r, warning=FALSE}
+booster %>%
+  filter(str_detect(`booster vaccine`, "Pfizer"), 
+         outcome_category == "infection") %>%
+  mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL)) %>%
+  mutate(timing_of_dose_days = case_when(
+    str_detect(timing_of_dose_days, "month") ~ 30 * parse_number(timing_of_dose_days),
+    str_detect(timing_of_dose_days, "weeks") & !str_detect(timing_of_dose_days, "to") & !str_detect(timing_of_dose_days, "-") ~ 7*parse_number(timing_of_dose_days)
+    )
+  ) %>%
+  ggplot(aes(timing_of_dose_days, VE, color = outcome_category)) +
+  geom_point() +
+  geom_smooth()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# XH cleaned data explore
+
+
+```{r, warning=FALSE}
+primaryxh <- (read_csv("../xh_temp_folder/cleaned_ve_data.csv"))[-1]
+
+filtered <- primaryxh %>%
+  filter(vaccine %in% c("Pfizer", "Moderna", "Janssen"),
+         VE > 0,
+         days_since_dose < 400,
+         outcome_category == "infection",
+         (time_sup - time_inf) < 42
+         ) %>%
+  mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL), `study ID` = as.factor(`study ID`)) %>%
+  group_by(`study ID`) %>%
+  summarise(max = max(days_since_dose)) %>% 
+  filter(max > 100) %>%
+  pull(`study ID`)
+
+
+
+
+primaryxh %>%
+  filter(vaccine %in% c("Pfizer", "Moderna", "Janssen"),
+         VE > 0,
+         days_since_dose < 400,
+         outcome_category == "infection",
+         (time_sup - time_inf) < 42,
+         `study ID` %in% filtered
+         ) %>%
+  mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL), `study ID` = as.factor(`study ID`)) %>%
+  ggplot(aes(log(days_since_dose), VE)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  theme(legend.position = "none") +
+  facet_grid(~vaccine)
+```
+
+```{r}
+primaryxh %>%
+  filter(vaccine %in% c("Pfizer"),
+         VE > 0,
+         days_since_dose < 400,
+         outcome_category == "infection",
+         (time_sup - time_inf) < 42,
+         `study ID` %in% filtered
+         ) %>%
+  mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL), `study ID` = as.factor(`study ID`)) %>%
+  lm(VE~days_since_dose, data = .) %>%
+  augment() %>%
+  ggplot(aes(.fitted, .resid)) +
+  geom_point() +
+  ylim(-60, 60) +
+  geom_hline(yintercept = 0)
+```
+
+
+
+```{r}
+primary %>%
+  filter(`first author` == "Lin", 
+         str_detect(vaccine, "Pfizer"), 
+         `study ID` == 326,
+         outcome_category == "infection") %>%
+  mutate(LCL = as.numeric(LCL), UCL = as.numeric(UCL)) %>%
+  mutate(timing_of_dose_days = case_when(
+    str_detect(timing_of_dose_days, "months") ~ 30 * parse_number(timing_of_dose_days),
+    str_detect(timing_of_dose_days, "weeks") & !str_detect(timing_of_dose_days, "to") & !str_detect(timing_of_dose_days, "-") ~ 7*parse_number(timing_of_dose_days)
+    )
+  ) %>%
+  select(timing_of_dose_days, VE, LCL, UCL) %>%
+  ggplot(aes(timing_of_dose_days, VE)) +
+  geom_point() +
+  geom_line() +
+  geom_ribbon(aes(ymin = LCL, ymax = UCL), alpha = 0.2)
+```
+
+```{r}
+primaryxh %>%
+  filter(`study ID` == 318)
+```
+
