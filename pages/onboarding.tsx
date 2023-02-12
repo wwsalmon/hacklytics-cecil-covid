@@ -92,7 +92,7 @@ export default function Onboarding({thisUser}: {thisUser: HydratedDocument<IUser
                                 3: "second booster",
                             }[stage]}</button>
                         )}
-                        <button onClick={() => setStage(prev => prev + 1)}>DEV SKIP</button>
+                        {/*<button onClick={() => setStage(prev => prev + 1)}>DEV SKIP</button>*/}
                     </>
                 )}
             </div>
