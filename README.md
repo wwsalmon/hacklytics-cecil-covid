@@ -1,4 +1,4 @@
-<img width="100" alt="bullet" src="https://user-images.githubusercontent.com/77285010/218306834-22f8b223-07a0-4804-a4a3-b89593177f9a.png"> 
+<img width="100" alt="A syringe-shaped rocket doodle" src="https://user-images.githubusercontent.com/77285010/218306834-22f8b223-07a0-4804-a4a3-b89593177f9a.png"> 
 
 # Hacklytics project: COVID vaccine effectiveness tracker - BoostOnTime!
 
@@ -32,7 +32,7 @@ Similarly, we unified and filtered the data entries for dosage sequence, vaccine
 > Maybe we can even plug the video link here.
 
 ## Future Plans & Applications
-<img width="740" alt="calendar" src="https://user-images.githubusercontent.com/77285010/218306356-ead545bf-13ed-43a4-8e2c-909be0b865df.png">
+<img width="300" alt="A calendar doodle" src="https://user-images.githubusercontent.com/77285010/218306356-ead545bf-13ed-43a4-8e2c-909be0b865df.png">
 
 
 ## Boost it up!
