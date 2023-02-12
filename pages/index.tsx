@@ -130,6 +130,7 @@ export default function Index({ thisUser }: {
 
     const svgRef = useRef<SVGSVGElement | null>(null);
     const axisRef = useRef<SVGSVGElement | null>(null);
+    const divRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         const svg = d3.select(svgRef.current);
@@ -152,6 +153,11 @@ export default function Index({ thisUser }: {
         const xAxis = d3.axisBottom(xScale).ticks(xRangeDays / (365/12)).tickFormat(d3.timeFormat("%b"));
         const yScale = d3.scaleLinear().domain([0, 100]).range([chartHeight, 0]);
         const yAxis = d3.axisLeft(yScale);
+
+        const firstDay = vaxEvents.sort((a, b) => +new Date(a.date) - +new Date(b.date))[0];
+        const firstX = xScale(new Date(firstDay.date));
+
+        divRef.current.scrollLeft = firstX - 32;
 
         svg.selectAll(".xAxis").remove();
         svg.append("g").attr("class", "xAxis").attr("transform", `translate(${chartPadding.left}, ${chartPadding.top + chartHeight})`).call(xAxis);
@@ -246,13 +252,21 @@ export default function Index({ thisUser }: {
                 </div>
                 <div className="relative overflow-y-hidden" style={{height: 400, width: "100%"}}>
                     <svg ref={axisRef} className="absolute top-0 left-0 w-full" style={{height: 400}}/>
-                    <div className="absolute top-0 left-0 w-full overflow-x-auto overflow-y-hidden" style={{height: 400}}>
+                    <div className="absolute top-0 left-0 w-full overflow-x-auto overflow-y-hidden" style={{height: 400}} ref={divRef}>
                         <svg ref={svgRef}/>
                     </div>
                 </div>
+                <div className="max-w-lg mx-auto my-12 text-sm opacity-50">
+                    <p>Sources:</p>
+                    <ul className="list-disc pl-4 my-2">
+                        <li className="my-2"><b>Primary series: Lin, Dan-Yu, et al. 2022 (n = 10.6 million)</b>. “Association of Primary and Booster Vaccination and Prior Infection with SARS-COV-2 Infection and Severe COVID-19 Outcomes.” JAMA, vol. 328, no. 14, 2022, p. 1415., https://doi.org/10.1001/jama.2022.17876.</li>
+                        <li className="my-2"><b>First booster: Tseng, Hung Fu, et al. 2023 (n = 123,236)</b>. “Effectiveness of Mrna-1273 Vaccination against SARS-COV-2 Omicron Subvariants BA.1, Ba.2, Ba.2.12.1, Ba.4, and Ba.5.” Nature Communications, vol. 14, no. 1, 2023, https://doi.org/10.1038/s41467-023-35815-7.</li>
+                        <li className="my-2"><b>Second booster: Ferdinants, Jill M, et al. 2022 (n = 893,461)</b>. “Waning of Vaccine Effectiveness against Moderate and Severe COVID-19 among Adults in the US from the Vision Network: Test Negative, Case-Control Study.” BMJ, 2022, https://doi.org/10.1136/bmj-2022-072141.</li>
+                    </ul>
+                </div>
                 <hr className="my-8"/>
-                <div className="max-w-xl mx-auto px-4">
-                    <H1 className="text-center mb-8">Vaccinations</H1>
+                <div className="max-w-lg mx-auto">
+                    <H1 className="text-center mb-8 mt-16">Vaccinations</H1>
                     {vaxEvents.map(d => (
                         <div className="p-4 border rounded-md my-4 shadow-md flex items-center" key={d._id.toString()}>
                             <div>
