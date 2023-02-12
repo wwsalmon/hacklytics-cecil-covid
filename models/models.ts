@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, { HydratedDocument } from "mongoose";
 
 const UserSchema = new mongoose.Schema<IUser>({
     email: {type: String, required: true},
@@ -31,6 +31,10 @@ export interface IVaxEvent {
     date: string,
     vaxId: string,
     userId: string,
+}
+
+export interface IVaxEventAgg extends IVaxEvent {
+    vax: HydratedDocument<IVax>,
 }
 
 export interface IVax {
