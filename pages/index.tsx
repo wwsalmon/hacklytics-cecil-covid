@@ -61,6 +61,8 @@ function getSeriesData(vaxEvents: HydratedDocument<IVaxEvent>[], type: "infectio
 function getCurrentStat(vaxEvents: HydratedDocument<IVaxEvent>[], type: "infection" | "death" | "severe") {
     const thisStat = getSeriesData(vaxEvents, type).reduce((a, b) => [...a, ...b], []).sort((a, b) => +new Date(a.date) - +new Date(b.date));
 
+    if (!thisStat.length) return 0;
+
     if (+new Date(thisStat[thisStat.length - 1].date) < +new Date()) {
         return "<" + thisStat[thisStat.length - 1].VE.toPrecision(3);
     }
@@ -278,6 +280,8 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
     if (!session) return { redirect: { permanent: false, destination: "/signin" } };
 
     try {
+        mongoose.set("strictQuery", false);
+
         await mongoose.connect(process.env.MONGODB_URL as string);
 
         let thisUser = await UserModel.findOne({email: session.user.email});
