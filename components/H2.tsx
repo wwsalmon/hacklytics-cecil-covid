@@ -6,6 +6,6 @@ export default function H2(props: ComponentProps<"h2">) {
     delete domProps.className;
 
     return (
-        <h2 className={classNames("font-bold uppercase my-6", props.className)} {...domProps}/>
+        <h2 className={classNames("font-bold uppercase", props.className)} {...domProps}/>
     )
 }

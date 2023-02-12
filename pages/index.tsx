@@ -221,7 +221,7 @@ export default function Index({ thisUser }: {
         <>
             <Navbar thisUser={thisUser}/>
             <div className="w-full mx-auto px-4 py-8">
-                <H2 className="text-center text-2xl">Your current<br/>vaccine effectiveness</H2>
+                <H2 className="text-center text-2xl my-6">Your current<br/>vaccine effectiveness</H2>
                 <p className="text-center text-9xl font-garamond font-extrabold"><span className="bg-infection leading-none inline-block px-4">{getCurrentStat(vaxEvents, "infection")}%</span></p>
                 <p className="text-center opacity-75 mt-8 mb-8">less likely to get infected compared to unvaccinated</p>
                 <hr className="my-8"/>
@@ -251,24 +251,30 @@ export default function Index({ thisUser }: {
                     </div>
                 </div>
                 <hr className="my-8"/>
-                <H1>Vaccinations</H1>
-                <H2>Add vaccination</H2>
-                <div className="flex items-center">
-                    <input type="date" min="2019-01-01" max={format(addDays(new Date(), 1), "yyyy-MM-dd")} className="p-2 border mr-4" value={date} onChange={e => setDate(e.target.value)}/>
-                    <select className="p-2 border mr-4" value={vaxId} onChange={e => setVaxId(e.target.value)}>
-                        {vaxModels.map(d => (
-                            <option value={d} key={d}>{d}</option>
-                        ))}
-                    </select>
-                    <button onClick={onAdd} className="p-2 bg-black text-white disabled:opacity-50" disabled={!date}>Add</button>
-                </div>
-                <H2>Vaccination record</H2>
-                {vaxEvents.map(d => (
-                    <div className="p-4 border rounded-md my-2 shadow-md" key={d._id.toString()}>
-                        <p>{format(dateOnly(d.date), "MMMM d, yyyy")}, {d.vaxId}</p>
-                        <button className="bg-black p-2 text-white" onClick={() => onDelete(d._id.toString())}>Delete</button>
+                <div className="max-w-xl mx-auto px-4">
+                    <H1 className="text-center mb-8">Vaccinations</H1>
+                    {vaxEvents.map(d => (
+                        <div className="p-4 border rounded-md my-4 shadow-md flex items-center" key={d._id.toString()}>
+                            <div>
+                                <p className="font-bold uppercase text-sm">{format(dateOnly(d.date), "MMMM d, yyyy")}</p>
+                                <p className="text-lg">{d.vaxId}</p>
+                            </div>
+                            <button className="bg-red-500 hover:bg-red-700 p-2 text-white ml-auto text-sm rounded-md" onClick={() => onDelete(d._id.toString())}>Delete</button>
+                        </div>
+                    ))}
+                    <div className="p-4 border rounded-md my-2 bg-gray-100">
+                        <H2 className="mb-4">Add vaccination</H2>
+                        <div className="flex items-center">
+                            <input type="date" min="2019-01-01" max={format(addDays(new Date(), 1), "yyyy-MM-dd")} className="p-2 border mr-4" value={date} onChange={e => setDate(e.target.value)}/>
+                            <select className="p-2 border mr-4" value={vaxId} onChange={e => setVaxId(e.target.value)}>
+                                {vaxModels.map(d => (
+                                    <option value={d} key={d}>{d}</option>
+                                ))}
+                            </select>
+                            <button onClick={onAdd} className="p-2 rounded-md text-sm ml-auto w-24 bg-black text-white disabled:opacity-50" disabled={!date}>Add</button>
+                        </div>
                     </div>
-                ))}
+                </div>
             </div>
         </>
     );
